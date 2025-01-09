@@ -5,13 +5,6 @@ class SystemConfig {
         this.version = 0;
     }
 
-    css() {
-        return {
-            universal: `/css/universal.css?v=${this.version}`,
-            homepage: `/css/homepage.css?v=${this.version}`
-        };
-    }
-
     assets() {
         return {
             logo: `/assets/logo.png?v=${this.version}`,
@@ -116,13 +109,13 @@ function systemConfig() {
     return new SystemConfig()
 }
 
-function createLink(rel:string, type:string, href:string) {
-    let linkElement = document.createElement("link")
-    linkElement.rel = rel
-    linkElement.type = type
-    linkElement.href = href
-    document.head.appendChild(linkElement)
-}
+// function createLink(rel:string, type:string, href:string) {
+//     let linkElement = document.createElement("link")
+//     linkElement.rel = rel
+//     linkElement.type = type
+//     linkElement.href = href
+//     document.head.appendChild(linkElement)
+// }
 
 function getScrollVar() {
     const htmlElement = document.documentElement
@@ -132,4 +125,4 @@ function getScrollVar() {
     return percentage
 }
 
-export { systemConfig, createLink, getScrollVar }
+export { systemConfig, getScrollVar }

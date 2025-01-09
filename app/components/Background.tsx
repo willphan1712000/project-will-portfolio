@@ -1,9 +1,10 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Background = () => {
   return (
     <div className="background">
-        <img draggable="false" src={undefined} alt="" />
+        <Image draggable="false" src={'/assets/self.png'} alt="" width="300" height="300" priority/>
     </div>
   )
 }
