@@ -2,6 +2,7 @@ import $ from 'jquery';
 import { getScrollVar } from "./config";
 
 export default function homepage() {
+    window.scrollTo(0, 0)
     // Add hyper reference to a tag
     // const href = config.navBar()[0] as {[key:string]: string}
     // const hrefName = config.navBar()[1] as {[key:string]: string}
@@ -30,9 +31,25 @@ export default function homepage() {
     //     $(".title").append(`<h1>${titleArr[i]}</h1>`)
     // }
 
+    let scroll = document.documentElement.scrollTop
+    let transform = 0
     // Configure Scroll function
     $(window).on("scroll", function() {
-        const percentage = getScrollVar()
+        const width = window.innerWidth
+        const height = window.innerHeight
+        
+        const [distanceToTop, percentage] = getScrollVar()
+        
+        const secondTitle = document.querySelector(".title__second") as HTMLElement
+        if(distanceToTop + height >= secondTitle.offsetTop) {
+            const d = distanceToTop - scroll
+            transform += d
+            handleSecondTitle(transform)
+        }
+        
+        scroll = distanceToTop
+
+        if(width <= 768) return
 
         if(percentage >= 3 && percentage <= 8) {
             $(".picture-section .picture-section__text .picture-section__text--section").addClass("scroll")
@@ -60,6 +77,14 @@ export default function homepage() {
             $(".picture-section__pics--section:nth-child(6)").addClass("active")
         }
     })
+
+    function handleSecondTitle(transform: number): void {
+        const up = document.querySelector(".title__second .up") as HTMLElement
+        const down = document.querySelector(".title__second .down") as HTMLElement
+
+        up.style.transform = `translateX(${transform * 0.5}px)`
+        down.style.transform = `translateX(${-transform * 0.5}px)`
+    }
 
     // Introduction Section
     // $("#introduction img").attr("src", config.introduction().img)

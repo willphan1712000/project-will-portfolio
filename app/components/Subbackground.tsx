@@ -4,7 +4,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 const Subbackground = () => {
   return (
-    <div className="subbackground">
+    <div className="subbackground md:!h-screen">
         <div className="title">
           <h1>My</h1>
           <h1>Portfolio</h1>
