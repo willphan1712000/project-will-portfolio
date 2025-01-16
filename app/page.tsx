@@ -22,7 +22,6 @@ export default function Home() {
       <Script src="https://kit.fontawesome.com/960d33c629.js" crossOrigin="anonymous" />
       <div id="main" className="md:!h-[900vh]">
           <Navbar />
-          <Background />
           <Subbackground />
           <Intro />
           <SecondTitle />
