@@ -6,8 +6,6 @@ import Subbackground from "./components/Subbackground";
 import "./css/homepage.css";
 import "./css/universal.css";
 import "./globals.css";
-import { useEffect } from "react";
-import homepage from "./execute";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",

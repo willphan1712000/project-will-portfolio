@@ -1,5 +1,3 @@
-import React from 'react'
-import { pictureContent, pictures } from './pictureContent'
 import Image from 'next/image'
 
 export type Content = Array<{
