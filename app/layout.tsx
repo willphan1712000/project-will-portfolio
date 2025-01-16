@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Subbackground from "./components/Subbackground";
 import "./css/homepage.css";
 import "./css/universal.css";
 import "./globals.css";
+import { useEffect } from "react";
+import homepage from "./execute";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -28,7 +34,11 @@ export default function RootLayout({
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Script src="https://kit.fontawesome.com/960d33c629.js" crossOrigin="anonymous" />
+        <Navbar />
+        <Subbackground />
         {children}
+        <Footer />
       </body>
     </html>
   );

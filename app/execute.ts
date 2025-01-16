@@ -14,7 +14,14 @@ export default function homepage() {
 
     // Make the button able to scroll to a specific section of the page
     $(".subbackground .subbackground__goToNext").click(() => {
-        document.getElementById("introduction")!.scrollIntoView({behavior: "smooth"})
+        const intro = document.getElementById("introduction")
+        const pictureSection = document.querySelector(".picture-section")
+
+        if(intro !== null) {
+            intro.scrollIntoView({behavior: "smooth"})
+        } else {
+            pictureSection!.scrollIntoView({behavior: "smooth"})
+        }
     })
 
     // Add link css to the head
@@ -82,8 +89,8 @@ export default function homepage() {
         const up = document.querySelector(".title__second .up") as HTMLElement
         const down = document.querySelector(".title__second .down") as HTMLElement
 
-        up.style.transform = `translateX(${transform * 0.5}px)`
-        down.style.transform = `translateX(${-transform * 0.5}px)`
+        up.style.transform = `translateX(${transform * 0.9}px)`
+        down.style.transform = `translateX(${-transform * 0.9}px)`
     }
 
     // Introduction Section

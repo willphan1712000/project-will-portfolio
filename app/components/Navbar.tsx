@@ -2,9 +2,9 @@ import Image from 'next/image'
 import React from 'react'
 
 const href: Record<string, string> = {
-  'Blog': '/',
-  'Travel Collection': '/',
-  'My projects': '/'
+  'Home': '/',
+  'Blog': '/blog',
+  'Travel Collection': '/travel',
 }
 
 const Navbar = () => {

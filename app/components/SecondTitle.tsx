@@ -1,10 +1,17 @@
 import React from 'react'
 
-const SecondTitle = () => {
+interface Props {
+  content: {
+    up: string,
+    down: string
+  }
+}
+
+const SecondTitle = ({content}: Props) => {
   return (
     <div className="title__second">
-        <div className="up">My Journey</div>
-        <div className="down">begins</div>
+        <div className="up">{content.up}</div>
+        <div className="down">{content.down}</div>
     </div>
   )
 }
