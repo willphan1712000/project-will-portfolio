@@ -2,11 +2,14 @@ import Image from 'next/image'
 import React, { JSX } from 'react'
 
 const year = new Date().getFullYear()
-const link: Record<string, string> = {
+
+type Social = | 'facebook' | 'instagram' | 'youtube' | 'linkedin' | 'github'
+
+export const link: Record<Social, string> = {
   'facebook': 'https://www.facebook.com/phanthanhnha123200',
   'instagram': 'https://www.instagram.com/phanthanhnha_0117',
   'youtube': 'https://www.youtube.com/channel/UCzDvuSIvBA05Hf9snlmS3TA',
-  'linkedin': 'https://www.linkedin.com/in/thanh-nha-will-phan-53715313a',
+  'linkedin': 'https://www.linkedin.com/in/thanh-nha-phan-53715313a',
   'github': 'https://github.com/willphan1712000'
 }
 
@@ -24,7 +27,7 @@ const Footer = () => {
         <div className="logo"><Image src={'/assets/logo.png'} alt='will_logo' width="300" height="200"/></div>
         <h3>Portfolio {year} All rights reserved</h3>
         <div className="social">
-          {Object.keys(link).map(item => <a key={item} href={link[item]} target="_blank">{icon[item]}</a>)}
+          {Object.keys(link).map(item => <a key={item} href={link[item as Social]} target="_blank">{icon[item]}</a>)}
         </div>
     </div>
   )

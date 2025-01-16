@@ -2,7 +2,19 @@ import React from 'react'
 import { pictureContent, pictures } from './pictureContent'
 import Image from 'next/image'
 
-const PictureSection = () => {
+export type Content = Array<{
+  heading: string,
+  des: string
+}>
+
+export type Pictures = string[]
+
+interface Props {
+  pictureContent: Content,
+  pictures: Pictures
+}
+
+const PictureSection = ({pictureContent, pictures}: Props) => {
   return (
     <div className="picture-section md:!flex-row md:!sticky md:!h-screen">
         <div className="picture-section__text md:!overflow-hidden">
@@ -13,10 +25,10 @@ const PictureSection = () => {
               </div>
           ))}
         </div>
-        <div className="picture-section__pics md:!flex">
+        <div className="picture-section__pics md:!flex rounded-[3rem] border-[1px] border-black overflow-hidden">
           {pictures.map(item => (
             <div key={item} className="picture-section__pics--section active">
-              <Image draggable="false" src={item} alt="will_picture" width="300" height="200" />
+              <Image draggable="false" src={item} alt="will_picture" width="1000" height="1000" />
             </div>
           ))}
         </div>

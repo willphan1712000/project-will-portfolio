@@ -1,42 +1,39 @@
-type Content = Array<{
-    heading: string,
-    des: string
-}>
+import { Content } from "./PictureSection"
 
 const pictureContent: Content = [
         {
-            heading: "I first got in University of Technology in Vietnam - 2018",
-            des: "I got third rank in the National Physics Competition and I was directly accepted by the University of Technology in Vietnam. I started my journey as an Aerospace Engineering Student. I had some awesome friends back then, and We had a chance to experience some wonderful things in Ho Chi Minh city."
+            heading: "HTML - CSS - Javascript",
+            des: "I started with the base of web development by learning HTML, CSS, and Javascript. I first created an TV web app that purely used these technology. I was stuck on getting the application larger because of limited knowledge about scaling and using other technology. However, this helps me understand the fundamentals of web development, making me feel comfortable taking me skills to the next level."
         },
         {
-            heading: "I went to the Philippines - 2019",
-            des: "I had been living in the Philippines for 6 monthsto study English. This was the first time I was apart from my home country to achieve I could not have achieved before. I was so happy to have some wonderful friends here, and wholehearted teachers. After half of 2019, I got 6.0 for the IELTS exam. This got me to a journey to the United States."
+            heading: "Design Pattern - OOP",
+            des: "I learned a course named Design Pattern that makes me rethink about code organization using Object Oriented approach to isolate each code module into objects and each object handles just one task called Single Responsibility Principle. Moreover, the art of using OOP helps me extend the application without having to modify too much on one object (Open-Closed Principle), so I can just add more features by literally adding more objects to the app using Design Pattern techniques that I have learned from the course. This skill takes my backend skill to the next level."
         },
         {
-            heading: "Go back to Vietnam - 2020",
-            des: "This was a year when we expericend a tough situation - COVID 19. I went back to Vietnam to continue my study in the University of Technology. I was attending a group project for CFD (Computational Fluid Dynamics). I learned a lot and made friends a lot. Furthermore, I also prepared for my journey to the United States. I was exhausted for the Visa interview. I used to drink a bottle of beer with some food alone to forget about the pain I was having back then. I was so confused about my future that I did not know where I should go for my life. Because of my mother, I stood up and it was the only motivation for me to pass the Visa Interview. I was accepted by Angelo State University, located in San Angelo city in Texas, and was ready for the journey to the United States."
+            heading: "Tailwind CSS",
+            des: "I used to have separate css files attaching to corresponding html file. When my app got more complex. I was out of control about my styling. Furthermore, I encountered a problem that my styling classes overlap over each other, making me frustrated to debug. Then Tailwind CSS came in rescue, providing me a way to make a global scope for every CSS classes for the entire application."
         },
         {
-            heading: "Welcome to the United States of America - January 2021",
-            des: "I had chance to fight all the way from Vietnam to the United States. I took roughly a day to complete the flight. I brought a lot of food because I did not know how to purchase things in the US. I used to be depressed due to this completely new environment. Everything was strange and every people was something I used to fear about. I had a chance to immerse myself in the country where I should speak English, a language I used to hate before. After 3 months living here, I met a lot of Vietnamese friends, then I decided to move in with them."
+            heading: "TypeScript",
+            des: "During my development time on frontend using Javascript, I found it really messed up when dealing with variable types and methods for each object. I did not know what type of variable I am using or what methods a document object has. Typescript came in rescue, I learned Typescript to stay more disciplined with type safe feature that comes with Typescript, making my app more robust and maintainable."
         },
         {
-            heading: "The state of Georgia - May 2021",
-            des: "This was the first time I went to Georgia for the first time to visit my friends. I was having fun time with them. I went to Halen to play tubing, I went to some local restaurants to try tremendous food. I got familiar to this place in order to get prepared to move to this state."
+            heading: "Reactjs and Nextjs",
+            des: "As I found it really difficult to extend the web front end using just html, and javascript. I learned React as a component-based approach to level up my front end side application. Nextjs is a metaframework that is built on top of Reactjs, adding more features to the framework to help developers make fast and robust web applications."
         },
         {
-            heading: "Move to Georgia - December 2021",
-            des: "Finally, I transferred from Angelo State University in Texas to Kennesaw State University in Georgia. My journey continues here."
+            heading: "Cloud Hosting Provider",
+            des: "Finally, I learned Docker to containerize my applications so I can deploy it anywhere at anytime."
         }
 ]
 
 const pictures: string[] = [
-    `/assets/brief/1.jpg`,
-    `/assets/brief/2.jpg`,
-    `/assets/brief/3.jpg`,
-    `/assets/brief/4.jpg`,
-    `/assets/brief/5.jpg`,
-    `/assets/brief/6.jpg`
+    `/assets/project/1.jpg`,
+    `/assets/project/2.png`,
+    `/assets/project/3.png`,
+    `/assets/project/4.png`,
+    `/assets/project/5.jpg`,
+    `/assets/project/6.jpg`
 ]
 
 export {pictureContent, pictures}

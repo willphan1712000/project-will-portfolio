@@ -1,16 +1,11 @@
 'use client'
 
 import { useEffect } from "react"
-import Background from "./components/Background"
 import Intro from "./components/Intro"
-import Navbar from "./components/Navbar"
 import PictureSection from "./components/PictureSection"
 import SecondTitle from "./components/SecondTitle"
-import Subbackground from "./components/Subbackground"
+import { pictureContent, pictures } from "./components/pictureContent"
 import homepage from "./execute"
-import Footer from "./components/Footer"
-import Script from "next/script"
-
 
 export default function Home() {
   useEffect(() => {
@@ -19,17 +14,11 @@ export default function Home() {
 
   return (
     <>
-      <Script src="https://kit.fontawesome.com/960d33c629.js" crossOrigin="anonymous" />
-      <div id="main" className="md:!h-[900vh]">
-          <Navbar />
-          <Background />
-          <Subbackground />
+      <div id="main" className="md:!h-[800vh]">
           <Intro />
-          <SecondTitle />
-          <PictureSection />
-
+          <SecondTitle content={{up: "Full stack journey", down: "begins here"}}/>
+          <PictureSection pictureContent={pictureContent} pictures={pictures}/>
       </div>
-      <Footer />
     </>
   );
 }
