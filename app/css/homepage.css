@@ -153,14 +153,13 @@ body {
 #introduction {
     display: flex;
     padding: 0;
-    margin: 20px;
-    background-color: #FFDEE9;
-    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
-    border-radius: 20px;
+    /* background-color: #FFDEE9; */
+    /* background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
+    border-radius: 0.7rem;
 }
 #introduction .img {
     flex: 1;
-    padding: 1rem;
+    padding: 4rem;
 }
 #introduction .text {
     display: flex;
