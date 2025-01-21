@@ -14,10 +14,12 @@ export default function Home() {
 
   return (
     <>
-      <div id="main" className="md:!h-[800vh]">
-          <Intro />
-          <SecondTitle content={{up: "Full stack journey", down: "begins here"}}/>
-          <PictureSection pictureContent={pictureContent} pictures={pictures}/>
+      <div className="flex justify-center items-center w-full">
+        <div id="main" className="md:!h-[800vh] max-w-[1500px]">
+            <Intro />
+            <SecondTitle content={{up: "Full stack journey", down: "begins here"}}/>
+            <PictureSection pictureContent={pictureContent} pictures={pictures}/>
+        </div>
       </div>
     </>
   );

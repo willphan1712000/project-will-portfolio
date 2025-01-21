@@ -10,7 +10,7 @@ const Subbackground = () => {
         <div className="title">
           <h1>My</h1>
           <h1>Portfolio</h1>
-          <h1>I am Will - I am Software Engineer</h1>
+          <h1>I am Will - I am a Software Engineer</h1>
         </div>
         <div className="subbackground__goToNext">
           <FontAwesomeIcon icon={faArrowDown} />
