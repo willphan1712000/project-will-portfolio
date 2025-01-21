@@ -31,12 +31,12 @@ const pictureContent: Content = [
 ]
 
 const pictures: string[] = [
-    `/assets/Travel/TN/1.jpg`,
-    `/assets/Travel/TN/2.jpg`,
-    `/assets/Travel/NC/1.jpg`,
-    `/assets/Travel/IL/1.jpg`,
-    `/assets/Travel/IL/3.jpg`,
-    `/assets/Travel/IL/2.jpg`
+    `/assets/travel/TN/1.jpg`,
+    `/assets/travel/TN/2.jpg`,
+    `/assets/travel/NC/1.jpg`,
+    `/assets/travel/IL/1.jpg`,
+    `/assets/travel/IL/3.jpg`,
+    `/assets/travel/IL/2.jpg`
 ]
 
 const collection:{
@@ -48,55 +48,55 @@ const collection:{
     }
 } = {
     1: {
-        src: `/assets/Travel/GA/1.jpg`,
+        src: `/assets/travel/GA/1.jpg`,
         title: 'Georgia, USA',
         des: 'My friend from Georgia Tech',
         link: 'https://maps.app.goo.gl/dphUL1yaANKUrce4A'
     },
     2: {
-        src: `/assets/Travel/GA/2.jpg`,
+        src: `/assets/travel/GA/2.jpg`,
         title: 'Georgia, USA',
         des: 'Six Flags is popular for children to come to play',
         link: 'https://maps.app.goo.gl/dphUL1yaANKUrce4A'
     },
     3: {
-        src: `/assets/Travel/GA/3.jpg`,
+        src: `/assets/travel/GA/3.jpg`,
         title: 'Georgia, USA',
         des: 'Six Flags is popular for the 70mph roller coaster',
         link: 'https://maps.app.goo.gl/dphUL1yaANKUrce4A'
     },
     4: {
-        src: `/assets/Travel/NC/2.jpg`,
+        src: `/assets/travel/NC/2.jpg`,
         title: 'North Carolina, USA',
         des: 'A rest area on the way to the capital city of Raleigh',
         link: 'https://maps.app.goo.gl/UskWEgM2wK6zcZwj6'
     },
     5: {
-        src: `/assets/Travel/NC/5.jpg`,
+        src: `/assets/travel/NC/5.jpg`,
         title: 'North Carolina, USA',
         des: 'A Lake in North Carolina',
         link: 'https://maps.app.goo.gl/UskWEgM2wK6zcZwj6'
     },
     6: {
-        src: `/assets/Travel/NC/7.jpg`,
+        src: `/assets/travel/NC/7.jpg`,
         title: 'North Carolina, USA',
         des: 'A chinese restaurant in Raleigh',
         link: 'https://maps.app.goo.gl/UskWEgM2wK6zcZwj6'
     },
     7: {
-        src: `/assets/Travel/IL/10.jpg`,
+        src: `/assets/travel/IL/10.jpg`,
         title: 'Illinois, USA',
         des: 'The largest Starbucks in the world',
         link: 'https://maps.app.goo.gl/gPUNsWn8L95K8TSV8'
     },
     8: {
-        src: `/assets/Travel/IL/7.jpg`,
+        src: `/assets/travel/IL/7.jpg`,
         title: 'Illinois, USA',
         des: 'Trump building - now the 47th President of the United States',
         link: 'https://maps.app.goo.gl/ihvzwEAsRnadtV1F9'
     },
     9: {
-        src: `/assets/Travel/IL/4.jpg`,
+        src: `/assets/travel/IL/4.jpg`,
         title: 'Illinois, USA',
         des: 'Me standing around the crowd of people in Chicago',
         link: 'https://maps.app.goo.gl/imWgbSpx8byK6f529'
