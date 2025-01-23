@@ -21,7 +21,7 @@ const link: Record<Project, { url: string; label: string }> = {
     },
     cm: {
         url: 'https://github.com/willphan1712000/cm',
-        label: 'CM',
+        label: 'CMS',
     },
     issueTracker: {
         url: 'https://github.com/willphan1712000/issue-tracker',
