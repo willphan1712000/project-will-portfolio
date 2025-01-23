@@ -3,7 +3,7 @@ import { Content } from "./PictureSection"
 const pictureContent: Content = [
         {
             heading: "HTML - CSS - Javascript",
-            des: "I started with the base of web development by learning HTML, CSS, and Javascript. I first created an TV web app that purely used these technology. I was stuck on getting the application larger because of limited knowledge about scaling and using other technology. However, this helps me understand the fundamentals of web development, making me feel comfortable taking me skills to the next level."
+            des: "I started with the base of web development by learning HTML, CSS, and Javascript. I first created a TV web app that purely used these technology. I was stuck on making the application larger because of limited knowledge about scaling and using other technology. However, this helps me understand the fundamentals of web development, making me feel comfortable taking my skills to the next level."
         },
         {
             heading: "Design Pattern - OOP",
@@ -11,7 +11,7 @@ const pictureContent: Content = [
         },
         {
             heading: "Tailwind CSS",
-            des: "I used to have separate css files attaching to corresponding html file. When my app got more complex. I was out of control about my styling. Furthermore, I encountered a problem that my styling classes overlap over each other, making me frustrated to debug. Then Tailwind CSS came in rescue, providing me a way to make a global scope for every CSS classes for the entire application."
+            des: "I used to have separate css files attaching to corresponding html file. When my app got more complex. I was out of control over my styling. Furthermore, I encountered a problem that my styling classes overlap over each other, making me frustrated to debug. Then Tailwind CSS came in rescue, providing a way to make a global scope for every CSS classes for the entire application."
         },
         {
             heading: "TypeScript",
@@ -19,7 +19,7 @@ const pictureContent: Content = [
         },
         {
             heading: "Reactjs and Nextjs",
-            des: "As I found it really difficult to extend the web front end using just html, and javascript. I learned React as a component-based approach to level up my front end side application. Nextjs is a metaframework that is built on top of Reactjs, adding more features to the framework to help developers make fast and robust web applications."
+            des: "As I found it really difficult to extend the web front end using just html, and javascript. I learned React as a component-based approach to level up my frontend side application. Nextjs is a metaframework that is built on top of React, adding server-side rendering feature and more features to the framework to help developers make fast and robust web applications."
         },
         {
             heading: "Cloud Hosting Provider",

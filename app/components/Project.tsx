@@ -30,7 +30,7 @@ const link: Record<Project, { url: string; label: string }> = {
 };
 
 const Project = () => {
-    const btn_wraper = `p-[0.13rem] rounded-[0.55rem] bg-black hover:shadow-2xl transition-all duration-100 bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500 w-[10rem] h-[3rem] flex-shrink-0`
+    const btn_wraper = `p-[0.13rem] rounded-[0.55rem] bg-black hover:shadow-2xl transition-all duration-100 w-[10rem] h-[3rem] flex-shrink-0`
     const btn = `flex bg-black size-full rounded-[0.55rem] justify-center items-center`
 
     return (

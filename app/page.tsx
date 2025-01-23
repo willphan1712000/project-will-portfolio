@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <div className="flex justify-center items-center w-full">
-        <div id="main" className="md:!h-[800vh] max-w-[1500px]">
+        <div id="main" className="md:!h-[800vh] max-w-[1500px] w-full">
             <Intro />
             <SecondTitle content={{up: "Full stack journey", down: "begins here"}}/>
             <PictureSection pictureContent={pictureContent} pictures={pictures}/>

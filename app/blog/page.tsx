@@ -14,7 +14,7 @@ export default function Blog() {
   return (
     <>
       <div className="flex justify-center items-center w-full">
-        <div id="main" className="md:!h-[800vh] max-w-[1500px]">
+        <div id="main" className="md:!h-[800vh] max-w-[1500px] w-full">
             <SecondTitle content={{up: "My journey", down: "begins"}}/>
             <PictureSection pictureContent={pictureContent} pictures={pictures}/>
         </div>
