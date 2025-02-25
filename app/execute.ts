@@ -47,41 +47,43 @@ export default function homepage() {
         
         const [distanceToTop, percentage] = getScrollVar()
         
-        const secondTitle = document.querySelector(".title__second") as HTMLElement
-        if(distanceToTop + height >= secondTitle.offsetTop) {
-            const d = distanceToTop - scroll
-            transform += d
-            handleSecondTitle(transform)
-        }
-        
-        scroll = distanceToTop
-
-        if(width <= 768) return
-
-        if(percentage >= 3 && percentage <= 8) {
-            $(".picture-section .picture-section__text .picture-section__text--section").addClass("scroll")
-        } else if (percentage < 3) {
-            $(".picture-section .picture-section__text .picture-section__text--section").removeClass("scroll")
-        }
-
-        if(percentage <= 3.5) {
-            $(".picture-section__pics--section").removeClass("active")
-            $(".picture-section__pics--section:nth-child(1)").addClass("active")
-        } else if (percentage >= 3.5 && percentage <= 4.5) {
-            $(".picture-section__pics--section").removeClass("active")
-            $(".picture-section__pics--section:nth-child(2)").addClass("active")
-        } else if (percentage >= 4.5 && percentage <= 5.5) {
-            $(".picture-section__pics--section").removeClass("active")
-            $(".picture-section__pics--section:nth-child(3)").addClass("active")
-        } else if (percentage >= 5.5 && percentage <= 6.5) {
-            $(".picture-section__pics--section").removeClass("active")
-            $(".picture-section__pics--section:nth-child(4)").addClass("active")
-        } else if (percentage >= 6.5 && percentage <= 7.5) {
-            $(".picture-section__pics--section").removeClass("active")
-            $(".picture-section__pics--section:nth-child(5)").addClass("active")
-        } else if (percentage >= 7.5) {
-            $(".picture-section__pics--section").removeClass("active")
-            $(".picture-section__pics--section:nth-child(6)").addClass("active")
+        const secondTitle = document.querySelector(".title__second") as HTMLElement | undefined
+        if(secondTitle) {
+            if(distanceToTop + height >= secondTitle.offsetTop) {
+                const d = distanceToTop - scroll
+                transform += d
+                handleSecondTitle(transform)
+            }
+            
+            scroll = distanceToTop
+    
+            if(width <= 768) return
+    
+            if(percentage >= 3 && percentage <= 8) {
+                $(".picture-section .picture-section__text .picture-section__text--section").addClass("scroll")
+            } else if (percentage < 3) {
+                $(".picture-section .picture-section__text .picture-section__text--section").removeClass("scroll")
+            }
+    
+            if(percentage <= 3.5) {
+                $(".picture-section__pics--section").removeClass("active")
+                $(".picture-section__pics--section:nth-child(1)").addClass("active")
+            } else if (percentage >= 3.5 && percentage <= 4.5) {
+                $(".picture-section__pics--section").removeClass("active")
+                $(".picture-section__pics--section:nth-child(2)").addClass("active")
+            } else if (percentage >= 4.5 && percentage <= 5.5) {
+                $(".picture-section__pics--section").removeClass("active")
+                $(".picture-section__pics--section:nth-child(3)").addClass("active")
+            } else if (percentage >= 5.5 && percentage <= 6.5) {
+                $(".picture-section__pics--section").removeClass("active")
+                $(".picture-section__pics--section:nth-child(4)").addClass("active")
+            } else if (percentage >= 6.5 && percentage <= 7.5) {
+                $(".picture-section__pics--section").removeClass("active")
+                $(".picture-section__pics--section:nth-child(5)").addClass("active")
+            } else if (percentage >= 7.5) {
+                $(".picture-section__pics--section").removeClass("active")
+                $(".picture-section__pics--section:nth-child(6)").addClass("active")
+            }
         }
     })
 

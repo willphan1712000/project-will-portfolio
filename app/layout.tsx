@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Subbackground from "./components/Subbackground";
 import "./css/homepage.css";
 import "./css/universal.css";
 import "./globals.css";
@@ -34,7 +33,6 @@ export default function RootLayout({
       >
         <Script src="https://kit.fontawesome.com/960d33c629.js" crossOrigin="anonymous" />
         <Navbar />
-        <Subbackground />
         {children}
         <Footer />
       </body>
