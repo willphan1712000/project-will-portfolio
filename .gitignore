@@ -46,6 +46,3 @@ next-env.d.ts
 # Docker files
 .dockerignore
 dockerfile
-
-# Will library
-/app/Web-development
