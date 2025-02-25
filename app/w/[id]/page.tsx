@@ -1,12 +1,12 @@
 import React from 'react'
 
-interface Props {
-  params: {
-    id: string
-  }
-}
+// interface Props {
+//   params: {
+//     id: string
+//   }
+// }
 
-const Services = ({params: {id}}: Props) => {
+const Services = () => {
   return (
     <div>
       coming soon ...

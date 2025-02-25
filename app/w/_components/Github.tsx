@@ -1,4 +1,4 @@
-import { $$ } from '@/app/Web-Development/W'
+import { $$ } from '@/Web-Development/W'
 import React, { useEffect, useRef, useState } from 'react'
 import { FaCheck } from 'react-icons/fa'
 
@@ -10,7 +10,7 @@ const Github = () => {
     const [copied, setCopy] = useState<boolean>(false)
 
     useEffect(() => {
-        $$(githubClone, copybtn.current).copyToClipboard().run((e) => {
+        $$(githubClone, copybtn.current).copyToClipboard().run(() => {
             setCopy(true)
             setTimeout(() => {
                 setCopy(false)
