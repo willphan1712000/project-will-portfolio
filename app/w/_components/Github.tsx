@@ -1,13 +1,16 @@
-import { $$ } from '@/Web-Development/W'
-import React, { useEffect, useRef, useState } from 'react'
+import { $$ } from '@willphan1712000/w'
+import { useEffect, useRef, useState } from 'react'
 import { FaCheck } from 'react-icons/fa'
 
 const github = 'https://github.com/willphan1712000/Web-development'
 const githubClone = 'git clone https://github.com/willphan1712000/Web-Development.git'
+const npm = 'npm i @willphan1712000/w'
 
 const Github = () => {
     const copybtn = useRef<HTMLSpanElement>(null)
+    const npmRef = useRef<HTMLSpanElement>(null)
     const [copied, setCopy] = useState<boolean>(false)
+    const [npmCopied, setNpmCopied] = useState<boolean>(false)
 
     useEffect(() => {
         $$(githubClone, copybtn.current).copyToClipboard().run(() => {
@@ -15,6 +18,13 @@ const Github = () => {
             setTimeout(() => {
                 setCopy(false)
             }, 1500)
+        })
+
+        $$(npm, npmRef.current).copyToClipboard().run(() => {
+          setNpmCopied(true)
+          setTimeout(() => {
+            setNpmCopied(false)
+          }, 1500)
         })
     })
 
@@ -32,8 +42,8 @@ const Github = () => {
         </div>
         <div className='relative px-10 py-3 border-white border-[2px] rounded-2xl bg-[--dark-color]'>
           <span className='absolute top-[-36%] left-[5%] bg-inherit p-1'>NPM</span>
-          <div>{"Coming soon ..."}</div>
-          <span className='absolute top-[-36%] right-[5%] bg-inherit p-1 cursor-pointer flex flex-row gap-1 justify-center items-center'>Copy</span>
+          <div>{npm}</div>
+          <span ref={npmRef} className='absolute top-[-36%] right-[5%] bg-inherit p-1 cursor-pointer flex flex-row gap-1 justify-center items-center'>{npmCopied && <FaCheck />}Copy</span>
         </div>
       </div>
     </div>
