@@ -9,7 +9,7 @@ import Title from './_components/Title'
 const W = () => {
   return (
     <div className='bg-[--dark-color] text-white p-10 flex items-center justify-center'>
-      <div className='max-w-[1500px]'>
+      <div className='max-w-[1500px] w-full'>
         <Title />
         <Github />
         <Skills />
