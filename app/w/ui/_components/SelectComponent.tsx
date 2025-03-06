@@ -67,8 +67,8 @@ const multiple = `const MultiSelect = () => {
   }`
 
 const SelectComponent = () => {
-    const [singleValue, singleChange] = useState<any>('')
-    const [multipleValue, multipleChange] = useState<any[]>([])
+    const [singleValue, singleChange] = useState<string>('')
+    const [multipleValue, multipleChange] = useState<string[]>([])
   return (
     <>
         <h1 id="select" className='text-2xl'>Option Select UI component</h1>
