@@ -6,7 +6,7 @@ import TableOfContents from './_components/TableOfContents'
 const UI = () => {
   return (
     <div className='flex gap-2 w-full flex-row'>
-      <div className='w-[80%]'>
+      <div className='lg:w-[80%] w-full'>
         <h1 className={styles.text}>UI Components</h1>
         <SelectComponent />
         <ButtonComponent />
