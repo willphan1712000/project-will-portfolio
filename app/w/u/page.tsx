@@ -1,6 +1,6 @@
 import React from 'react'
 
-const UI = () => {
+const page = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const UI = () => {
   )
 }
 
-export default UI
+export default page

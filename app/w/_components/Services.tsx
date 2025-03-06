@@ -3,7 +3,7 @@ import style from './style.module.css'
 const Services = () => {
   return (
     <div className='flex justify-center items-center flex-col my-10'>
-      <p className={`${style.text} mb-5`}>Services</p>
+      <p className={`${style.text}`}>Services</p>
       <div className='flex flex-col gap-10 relative bg-[--dark-color] w-[70%]'>
         <div className='flex flex-col items-start bg-inherit z-[1]'>
             <div className='w-[70%] text-end border-white border-[0.5px] rounded-2xl flex justify-center items-center flex-col p-5 bg-inherit'>
