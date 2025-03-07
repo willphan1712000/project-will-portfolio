@@ -4,10 +4,14 @@ import React from 'react'
 import Code from '../../_components/Code'
 import { Button } from '@willphan1712000/w'
 
-const solid = `const SolidButton = () => {
+const solid = `import { Button } from '@willphan1712000/w'
+
+  const SolidButton = () => {
     return <Button content='Click me' type='solid'/>
   }`
-const gradient = `const GradientButton = () => {
+const gradient = `import { Button } from '@willphan1712000/w'
+
+  const GradientButton = () => {
     return <Button content='Click me' type='gradient'/>
   }`
 
@@ -23,6 +27,7 @@ const ButtonComponent = () => {
         <div className='flex justify-center'>
             <Button content='Click me' type='gradient' />
         </div>
+        <br></br>
     </>
   )
 }

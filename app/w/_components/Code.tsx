@@ -13,7 +13,7 @@ const Code = ({filename, code}: Props) => {
   return (
     <div className={`shadow-2xl rounded-xl ${styles.code} p-3 m-5`}>
       <div className='flex flex-row w-full justify-between'><span>{filename}</span> <MacButtons /></div>
-      <pre className='language-ts' tabIndex={0}>
+      <pre className='language-ts' tabIndex={0} style={{overflowX: "auto", overflowY: "hidden"}}>
         <code className='p-5 language-ts'>
           {!code ? "Code goes here" : code}
         </code>

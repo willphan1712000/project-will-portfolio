@@ -5,63 +5,78 @@ import { useState } from 'react';
 import Code from '../../_components/Code';
 
 const options = [
-  { label: 'nodejs', value: 'nodejs' },
-  { label: 'prisma', value: 'prisma' },
-  { label: 'react', value: 'react' },
-  { label: 'typescript', value: 'typescript' },
-  { label: 'express', value: 'express' },
-  { label: 'mongodb', value: 'mongodb' },
-  { label: 'graphql', value: 'graphql' },
-  { label: 'docker', value: 'docker' },
-  { label: 'nextjs', value: 'nextjs' },
-  { label: 'tailwindcss', value: 'tailwindcss' },
-  { label: 'redux', value: 'redux' },
-  { label: 'javascript', value: 'javascript' },
-  { label: 'vue', value: 'vue' },
-  { label: 'angular', value: 'angular' },
-  { label: 'jest', value: 'jest' },
-  { label: 'firebase', value: 'firebase' },
-  { label: 'nestjs', value: 'nestjs' },
-  { label: 'vscode', value: 'vscode' },
-  { label: 'sass', value: 'sass' },
-  { label: 'webpack', value: 'webpack' },
-  { label: 'npm', value: 'npm' },
-  { label: 'yarn', value: 'yarn' },
-  { label: 'flask', value: 'flask' },
-  { label: 'django', value: 'django' },
-  { label: 'php', value: 'php' },
-  { label: 'mysql', value: 'mysql' },
-  { label: 'postgresql', value: 'postgresql' },
-  { label: 'python', value: 'python' },
-  { label: 'aws', value: 'aws' },
-  { label: 'azure', value: 'azure' },
-  { label: 'cloudflare', value: 'cloudflare' },
-  { label: 'cypress', value: 'cypress' },
-  { label: 'mocha', value: 'mocha' },
-  { label: 'chai', value: 'chai' },
-  { label: 'html', value: 'html' },
-  { label: 'css', value: 'css' },
-  { label: 'bulma', value: 'bulma' },
-  { label: 'jquery', value: 'jquery' },
-  { label: 'git', value: 'git' },
-  { label: 'github', value: 'github' },
-  { label: 'gitlab', value: 'gitlab' },
-  { label: 'bitbucket', value: 'bitbucket' },
-  { label: 'kubernetes', value: 'kubernetes' },
-  { label: 'vagrant', value: 'vagrant' },
-  { label: 'bash', value: 'bash' },
-  { label: 'zsh', value: 'zsh' },
-  { label: 'markdown', value: 'markdown' },
-  { label: 'json', value: 'json' },
-  { label: 'csv', value: 'csv' },
+  { label: 'Nodejs', value: 'Nodejs' },
+  { label: 'Prisma', value: 'Prisma' },
+  { label: 'React', value: 'React' },
+  // { label: 'Typescript', value: 'Typescript' },
+  // { label: 'Express', value: 'Express' },
+  // { label: 'Mongodb', value: 'Mongodb' },
+  // { label: 'Graphql', value: 'Graphql' },
+  // { label: 'Docker', value: 'Docker' },
+  // { label: 'Nextjs', value: 'Nextjs' },
+  // { label: 'Tailwindcss', value: 'Tailwindcss' },
+  // { label: 'Redux', value: 'Redux' },
+  // { label: 'Javascript', value: 'Javascript' },
+  // { label: 'Vue', value: 'Vue' },
+  // { label: 'Angular', value: 'Angular' },
+  // { label: 'Jest', value: 'Jest' },
+  // { label: 'Firebase', value: 'Firebase' },
+  // { label: 'Nestjs', value: 'Nestjs' },
+  // { label: 'Vscode', value: 'Vscode' },
+  // { label: 'Sass', value: 'Sass' },
+  // { label: 'Webpack', value: 'Webpack' },
+  // { label: 'Npm', value: 'Npm' },
+  // { label: 'Yarn', value: 'Yarn' },
+  // { label: 'Flask', value: 'Flask' },
+  // { label: 'Django', value: 'Django' },
+  // { label: 'Php', value: 'Php' },
+  // { label: 'Mysql', value: 'Mysql' },
+  // { label: 'Postgresql', value: 'Postgresql' },
+  // { label: 'Python', value: 'Python' },
+  // { label: 'Aws', value: 'Aws' },
+  // { label: 'Azure', value: 'Azure' },
+  // { label: 'Cloudflare', value: 'Cloudflare' },
+  // { label: 'Cypress', value: 'Cypress' },
+  // { label: 'Mocha', value: 'Mocha' },
+  // { label: 'Chai', value: 'Chai' },
+  // { label: 'Html', value: 'Html' },
+  // { label: 'Css', value: 'Css' },
+  // { label: 'Bulma', value: 'Bulma' },
+  // { label: 'Jquery', value: 'Jquery' },
+  // { label: 'Git', value: 'Git' },
+  // { label: 'Github', value: 'Github' },
+  // { label: 'Gitlab', value: 'Gitlab' },
+  // { label: 'Bitbucket', value: 'Bitbucket' },
+  // { label: 'Kubernetes', value: 'Kubernetes' },
+  // { label: 'Vagrant', value: 'Vagrant' },
+  // { label: 'Bash', value: 'Bash' },
+  // { label: 'Zsh', value: 'Zsh' },
+  // { label: 'Markdown', value: 'Markdown' },
+  // { label: 'Json', value: 'Json' },
+  // { label: 'Csv', value: 'Csv' },
 ];
 
+const single = `import { Select } from '@willphan1712000/w';
 
-const single = `const SingleSelect = () => {
+  const options = [
+    { label: 'Nodejs', value: 'Nodejs' },
+    { label: 'Prisma', value: 'Prisma' },
+    { label: 'React', value: 'React' },
+  ]
+
+  const SingleSelect = () => {
     const [value, setValue] = useState<any[]>([])
     return <Select options={options} type='single' change={setValue} value={value} size='20'/>
   }`
-const multiple = `const MultiSelect = () => {
+const multiple = `import { Select } from '@willphan1712000/w';
+
+  const options = [
+    { label: 'Nodejs', value: 'Nodejs' },
+    { label: 'Prisma', value: 'Prisma' },
+    { label: 'React', value: 'React' },
+  ]
+
+  const MultiSelect = () => {
     const [value, setValue] = useState<any[]>([])
     return <Select options={options} type='multiple' change={setValue} value={value} size='20'/>
   }`
@@ -73,13 +88,14 @@ const SelectComponent = () => {
     <>
         <h1 id="select" className='text-2xl'>Option Select UI component</h1>
         <Code filename='SingleSelect.tsx' code={single} />
-        <div className='bg-white flex items-start justify-center p-4 rounded-md m-5 h-[47rem] overflow-hidden'>
+        <div className='bg-white flex items-start justify-center p-4 rounded-md m-5 h-[20rem] overflow-hidden'>
           <Select options={options} type='single' change={singleChange} value={singleValue} size='20'/>
         </div>
         <Code filename='MultiSelect.tsx' code={multiple} />
-        <div className='bg-white flex items-start justify-center p-4 rounded-md m-5 h-[47rem] overflow-hidden'>
+        <div className='bg-white flex items-start justify-center p-4 rounded-md m-5 h-[20rem] overflow-hidden'>
           <Select options={options} type='multiple' change={multipleChange} value={multipleValue} size='20'/>
         </div>
+        <br></br>
     </>
   )
 }
