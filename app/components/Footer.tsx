@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import React, { JSX } from 'react'
+import { JSX } from 'react'
+import Logo from './Logo'
 
 const year = new Date().getFullYear()
 
@@ -24,7 +24,7 @@ const icon: Record<string, JSX.Element> = {
 const Footer = () => {
   return (
     <div id="footer">
-        <div className="logo"><Image src={'/assets/logo.png'} alt='will_logo' width="300" height="200"/></div>
+        <div className="logo"><Logo /></div>
         <h3>Portfolio {year} All rights reserved</h3>
         <div className="social">
           {Object.keys(link).map(item => <a key={item} href={link[item as Social]} target="_blank">{icon[item]}</a>)}
