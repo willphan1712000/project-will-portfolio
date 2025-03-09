@@ -1,6 +1,6 @@
 import React from 'react'
 
-type Project = | 'bio' | 'tv' | 'W' | 'portfolio' | 'issueTracker' | 'cm'
+type Project = | 'bio' | 'tv' | 'W' | 'portfolio' | 'issueTracker' | 'cm' | 'python'
 
 const link: Record<Project, { url: string; label: string }> = {
     portfolio: {
@@ -26,6 +26,10 @@ const link: Record<Project, { url: string; label: string }> = {
     issueTracker: {
         url: 'https://github.com/willphan1712000/issue-tracker',
         label: 'Issue Tracker',
+    },
+    python: {
+        url: 'https://github.com/willphan1712000/willphanpy',
+        label: 'Python',
     },
 };
 
