@@ -5,6 +5,7 @@ import ButtonComponent from './_components/ButtonComponent'
 import RangeSliderComponent from './_components/RangeSliderComponent'
 import SelectComponent from './_components/SelectComponent'
 import TableOfContents from './_components/TableOfContents'
+import TransformComponent from './_components/TransformComponent'
 
 const UI = () => {
   return (
@@ -14,6 +15,7 @@ const UI = () => {
         <SelectComponent />
         <ButtonComponent />
         <RangeSliderComponent />
+        <TransformComponent />
       </div>
       <div className='hidden w-[20%] lg:block'>
         <TableOfContents />
