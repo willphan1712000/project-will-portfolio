@@ -26,6 +26,12 @@ const Intro = () => {
                   <a href={link.github} className={btn} target="_blank">Github</a>
                 </div>
               </div>
+              <br></br>
+              <div className="flex items-center justify-center md:flex-row gap-3 text-white">
+                <div className={btn_wraper}>
+                  <a href={link.resume} className={btn} target="_blank">Resume</a>
+                </div>
+              </div>
           </div>
         </div>
       </div>

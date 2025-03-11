@@ -29,7 +29,6 @@ const upload = `import { Button, UploadFile } from '@willphan1712000/w'
 
 const ButtonComponent = () => {
   useEffect(() => {
-    console.log("run")
     const uploadFile = new UploadFile(document.getElementById("uploadButtonDemo") as HTMLElement, ({e, error}: {e: string, error: boolean}) => {
       console.log(e)
       console.log(error)

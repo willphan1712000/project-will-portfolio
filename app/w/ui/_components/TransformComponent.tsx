@@ -62,7 +62,7 @@ const TransformComponent = () => {
         <div className=' justify-center hidden'>
             <div className='frame relative w-[100%] max-w-[500px] max-h-[500px] aspect-square border-dashed border-black rounded-full border-4 p-[50px] overflow-hidden bg-white' ref={frameRef}>
                 <div className='wrapper' ref={wrapperRef}>
-                    <Image src="/assets/tech/ts.png" alt="transform image" />
+                    <Image src="/assets/tech/ts.png" alt="transform image" width="700" height="700"/>
                 </div>
             </div>
             <div className='controller'></div>

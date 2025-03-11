@@ -3,14 +3,15 @@ import Logo from './Logo'
 
 const year = new Date().getFullYear()
 
-type Social = | 'facebook' | 'instagram' | 'youtube' | 'linkedin' | 'github'
+type Social = | 'facebook' | 'instagram' | 'youtube' | 'linkedin' | 'github' | 'resume'
 
 export const link: Record<Social, string> = {
   'facebook': 'https://www.facebook.com/phanthanhnha123200',
   'instagram': 'https://www.instagram.com/phanthanhnha_0117',
   'youtube': 'https://www.youtube.com/channel/UCzDvuSIvBA05Hf9snlmS3TA',
   'linkedin': 'https://www.linkedin.com/in/thanh-nha-phan-53715313a',
-  'github': 'https://github.com/willphan1712000'
+  'github': 'https://github.com/willphan1712000',
+  'resume': 'https://drive.google.com/file/d/1w6iEcipTuqCP_Cwy943RP1k3oE8LBymn/view?usp=sharing'
 }
 
 const icon: Record<string, JSX.Element> = {
