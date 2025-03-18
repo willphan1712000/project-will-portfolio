@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 import "./css/homepage.css";
 import "./css/universal.css";
 import "./globals.css";
 import "@willphan1712000/w/dist/index.css"
+import AuthProvider from "./auth/AuthProvider";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -34,9 +33,10 @@ export default function RootLayout({
         className="mt-20 md:mt-0"
       >
         <Script src="https://kit.fontawesome.com/960d33c629.js" crossOrigin="anonymous" />
-        <Navbar />
-        {children}
-        <Footer />
+        
+        <AuthProvider> 
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );

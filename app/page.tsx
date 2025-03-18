@@ -4,11 +4,13 @@ import { useEffect } from "react"
 import Intro from "./components/Intro"
 import PictureSection from "./components/PictureSection"
 import SecondTitle from "./components/SecondTitle"
+import Subbackground from "./components/Subbackground"
 import { pictureContent, pictures } from "./components/pictureContent"
 import homepage from "./execute"
-import Subbackground from "./components/Subbackground"
 
-export default function Home() {
+export default
+ function Home() {
+  
   useEffect(() => {
     homepage()
   }, [])

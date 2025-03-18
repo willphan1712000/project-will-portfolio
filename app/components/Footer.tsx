@@ -1,5 +1,9 @@
 import { JSX } from 'react'
 import Logo from './Logo'
+import { CgLogIn } from 'react-icons/cg'
+import Link from 'next/link'
+import { useSession } from 'next-auth/react'
+import { VscSignIn } from 'react-icons/vsc'
 
 const year = new Date().getFullYear()
 
@@ -23,12 +27,24 @@ const icon: Record<string, JSX.Element> = {
 }
 
 const Footer = () => {
+  const { status, data: session } = useSession()
+
   return (
-    <div id="footer">
+    <div id="footer" className='relative'>
         <div className="logo"><Logo /></div>
         <h3>Portfolio {year} All rights reserved</h3>
         <div className="social">
           {Object.keys(link).map(item => <a key={item} href={link[item as Social]} target="_blank">{icon[item]}</a>)}
+        </div>
+        <div className='flex flex-row justify-center items-center absolute top-1 right-1 gap-2'>
+          { status === 'loading' && <p>Loading...</p>}
+          { status === 'unauthenticated' && <Link className='cursor-pointer' href={'/api/auth/signin'}><CgLogIn size={20}/></Link>}
+          { status === 'authenticated' && (
+            <>
+              <p>{session.user?.name}</p>
+              <Link className='cursor-pointer' href={'/api/auth/signout'}><VscSignIn size={20} /></Link>
+            </>
+        )}
         </div>
     </div>
   )

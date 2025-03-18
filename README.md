@@ -1,4 +1,4 @@
-## This is my website for learning-integrated portfolio, I want to make a place for people to go for express their life and share their life to the world.
+## This is my website for my personal information such as hobbies, blogs, and showcasing my tech skills in a interactive way, including all source code pushed on Github and other necessary resources
 
 ### Below is specific purposes for this project
 
@@ -6,8 +6,6 @@
 - Will Library : this is where I share my typescript project with examples of UI components, API handling, Async State Management, and Usability functions
 - Blog page : this is where I post every story and where people can contribute to the story ecosystem
 - Travel Collection page : this is where I post all my travel experience and where people can post their travel experience as well
-
-### This project is also aiming to create an environment where I share my tech skills in a interactive way, including all source code pushed on Github and other necessary resources
 
 ## If I received some feedback from you, it would be amazing for my project to be more well developed
 
