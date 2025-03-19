@@ -1,25 +1,24 @@
 // React Context to access auth session
+// This component implements React Query Provider
 
 'use client';
-import React, {ReactNode, useEffect} from 'react'
-import { SessionProvider } from 'next-auth/react'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { SessionProvider } from 'next-auth/react';
+import { ReactNode } from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 const AuthProvider = ({children} : {
     children: ReactNode
 }) => {
-  useEffect(() => {
-    
-  }, [])
   return (
-    <>
+    <QueryClientProvider client={new QueryClient()}>
         <SessionProvider>
           <Navbar />
           {children}
           <Footer />
         </SessionProvider>
-    </>
+    </QueryClientProvider>
 
   )
 }

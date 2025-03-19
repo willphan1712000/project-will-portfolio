@@ -1,11 +1,26 @@
+import { Social } from '@prisma/client'
+import { useQuery } from '@tanstack/react-query'
+import { $$$ } from '@willphan1712000/w'
 import Image from 'next/image'
-import React from 'react'
 import { link } from './Footer'
 import Project from './Project'
 
 const Intro = () => {
   const btn_wraper = `p-[0.13rem] rounded-[0.55rem] bg-black hover:shadow-2xl transition-all duration-100 w-[7rem] h-[3rem]`
   const btn = `flex bg-black size-full rounded-[0.55rem] justify-center items-center`
+
+  const {data: info, error, isLoading} = useQuery<Social>({
+    queryKey: ['info'],
+    queryFn: () => $$$("/api/main", {}).api().get(),
+    staleTime: 60 * 1000, // 60 seconds,
+    retry: 3
+  })
+
+  if(error) return null
+
+  if(isLoading) return <p>Loading...</p>
+
+  console.log(info)
 
   return (
     <>

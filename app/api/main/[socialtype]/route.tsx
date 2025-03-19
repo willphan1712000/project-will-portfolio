@@ -1,7 +1,9 @@
 import prisma from "@/prisma/client";
 import { Social } from "@prisma/client";
+import { getServerSession } from "next-auth";
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
+import { authOptions } from "../../auth/authOptions";
 
 interface Props { params: { socialtype: keyof Social }}
 
@@ -12,6 +14,12 @@ export const Schema = z.object({
 export type SchemaType = z.infer<typeof Schema>
 
 export async function PUT(request: NextRequest, { params } : Props) {
+    // Authorize user before granting access to resources
+    const session = await getServerSession(authOptions)
+    
+    if(!session)
+        return NextResponse.json({error: "user not authenticated, deny access to resources"}, { status: 400 })
+    
     const { socialtype } = await params
     // Get the body
     const body = await request.json() as SchemaType
