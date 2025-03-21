@@ -1,10 +1,10 @@
+import "@willphan1712000/w/dist/index.css";
 import type { Metadata } from "next";
 import Script from "next/script";
+import AuthProvider from "./auth/AuthProvider";
 import "./css/homepage.css";
 import "./css/universal.css";
 import "./globals.css";
-import "@willphan1712000/w/dist/index.css"
-import AuthProvider from "./auth/AuthProvider";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description: "My journey to tech industry",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

@@ -1,26 +1,27 @@
 import { Social } from '@prisma/client'
 import { useQuery } from '@tanstack/react-query'
-import { $$$ } from '@willphan1712000/w'
+import axios from 'axios'
+import { useSession } from 'next-auth/react'
 import Image from 'next/image'
-import { link } from './Footer'
+import EditLink from './EditLink'
 import Project from './Project'
 
 const Intro = () => {
   const btn_wraper = `p-[0.13rem] rounded-[0.55rem] bg-black hover:shadow-2xl transition-all duration-100 w-[7rem] h-[3rem]`
   const btn = `flex bg-black size-full rounded-[0.55rem] justify-center items-center`
 
+  const {status} = useSession()
+
   const {data: info, error, isLoading} = useQuery<Social>({
     queryKey: ['info'],
-    queryFn: () => $$$("/api/main", {}).api().get(),
+    queryFn: () => axios.get("/api/main").then(res => res.data),
     staleTime: 60 * 1000, // 60 seconds,
-    retry: 3
+    retry: 3,
   })
 
   if(error) return null
 
   if(isLoading) return <p>Loading...</p>
-
-  console.log(info)
 
   return (
     <>
@@ -34,18 +35,24 @@ const Intro = () => {
           <div className="p-[2rem] flex flex-col justify-center items-center">
               <div className="mb-[0.5rem] text-[1.5rem]">Reach out to me from</div>
               <div className="flex items-center justify-center md:flex-row gap-3 text-white">
-                <div className={btn_wraper}>
-                  <a href={link.linkedin} className={btn} target="_blank">Linkedin</a>
-                </div>
-                <div className={btn_wraper}>
-                  <a href={link.github} className={btn} target="_blank">Github</a>
-                </div>
+                <EditLink edit={status == 'authenticated'} api="/api/main/linkedin" name="Linkedin" value={info?.linkedin ?? "#"}>
+                  <div className={btn_wraper}>
+                    <a href={info?.linkedin ?? "#"} className={btn} target="_blank">Linkedin</a>
+                  </div>
+                </EditLink>
+                <EditLink edit={status == 'authenticated'} api="/api/main/github" name="Github" value={info?.github ?? "#"}>
+                  <div className={btn_wraper}>
+                    <a href={info?.github ?? "#"} className={btn} target="_blank">Github</a>
+                  </div>
+                </EditLink>
               </div>
               <br></br>
               <div className="flex items-center justify-center md:flex-row gap-3 text-white">
-                <div className={btn_wraper}>
-                  <a href={link.resume} className={btn} target="_blank">Resume</a>
-                </div>
+                <EditLink edit={status == 'authenticated'} api="/api/main/resume" name="Resume" value={info?.resume ?? "#"}>
+                  <div className={btn_wraper}>
+                    <a href={info?.resume ?? "#"} className={btn} target="_blank">Resume</a>
+                  </div>
+                </EditLink>
               </div>
           </div>
         </div>

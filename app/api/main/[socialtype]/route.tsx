@@ -5,22 +5,22 @@ import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { authOptions } from "../../auth/authOptions";
 
-interface Props { params: { socialtype: keyof Social }}
-
-export const Schema = z.object({
+const Schema = z.object({
     url: z.string().url(),
 })
 
 export type SchemaType = z.infer<typeof Schema>
 
-export async function PUT(request: NextRequest, { params } : Props) {
+export async function PUT(request: NextRequest, { params }: { params: Promise<{ socialtype: keyof Social }> }) {
     // Authorize user before granting access to resources
     const session = await getServerSession(authOptions)
     
     if(!session)
         return NextResponse.json({error: "user not authenticated, deny access to resources"}, { status: 400 })
-    
-    const { socialtype } = await params
+
+    if(session.user?.email !== process.env.WILL_EMAIL)
+        return NextResponse.json({error: "Wrong user, deny access to resources"}, { status: 400 })
+
     // Get the body
     const body = await request.json() as SchemaType
     // Validate the request
@@ -28,6 +28,9 @@ export async function PUT(request: NextRequest, { params } : Props) {
 
     if(!validation.success)
         return NextResponse.json(validation.error.errors, {status : 400})
+
+    // get params
+    const { socialtype } = await params
 
     // Get data from the body
     const { url } = body
