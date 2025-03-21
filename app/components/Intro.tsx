@@ -35,22 +35,22 @@ const Intro = () => {
           <div className="p-[2rem] flex flex-col justify-center items-center">
               <div className="mb-[0.5rem] text-[1.5rem]">Reach out to me from</div>
               <div className="flex items-center justify-center md:flex-row gap-3 text-white">
-                <EditLink edit={status == 'authenticated'} api="/api/main/linkedin" name="Linkedin" value={info?.linkedin ?? "#"}>
+                <EditLink edit={status == 'authenticated'} api="/api/main/linkedin" name="Linkedin" value={info?.linkedin ?? ""}>
                   <div className={btn_wraper}>
-                    <a href={info?.linkedin ?? "#"} className={btn} target="_blank">Linkedin</a>
+                    <a href={info?.linkedin ?? ""} className={btn} target="_blank">Linkedin</a>
                   </div>
                 </EditLink>
-                <EditLink edit={status == 'authenticated'} api="/api/main/github" name="Github" value={info?.github ?? "#"}>
+                <EditLink edit={status == 'authenticated'} api="/api/main/github" name="Github" value={info?.github ?? ""}>
                   <div className={btn_wraper}>
-                    <a href={info?.github ?? "#"} className={btn} target="_blank">Github</a>
+                    <a href={info?.github ?? ""} className={btn} target="_blank">Github</a>
                   </div>
                 </EditLink>
               </div>
               <br></br>
               <div className="flex items-center justify-center md:flex-row gap-3 text-white">
-                <EditLink edit={status == 'authenticated'} api="/api/main/resume" name="Resume" value={info?.resume ?? "#"}>
+                <EditLink edit={status == 'authenticated'} api="/api/main/resume" name="Resume" value={info?.resume ?? ""}>
                   <div className={btn_wraper}>
-                    <a href={info?.resume ?? "#"} className={btn} target="_blank">Resume</a>
+                    <a href={info?.resume ?? ""} className={btn} target="_blank">Resume</a>
                   </div>
                 </EditLink>
               </div>
