@@ -28,26 +28,25 @@ const Footer = () => {
 
   if(isLoading) return <p>Loading...</p>
 
-  if(info)
-    return (
-      <div id="footer" className='relative'>
-          <div className="logo"><Logo /></div>
-          <h3>Portfolio {year} All rights reserved</h3>
-          <div className={`social`}>
-            {Object.keys(icon).map(item => <EditLink key={item} api={`/api/main/${item}`} edit={status=='authenticated'} name={item} value={info[item as keyof Social]!}><a href={info![item as keyof Social]!} target="_blank">{icon[item]}</a></EditLink>)}
-          </div>
-          <div className='flex flex-row justify-center items-center absolute top-1 right-1 gap-2'>
-            { status === 'loading' && <p>Loading...</p>}
-            { status === 'unauthenticated' && <Link className='cursor-pointer' href={'/api/auth/signin'}><CgLogIn size={20}/></Link>}
-            { status === 'authenticated' && (
-              <>
-                <p>{session.user?.name}</p>
-                <Link className='cursor-pointer' href={'/api/auth/signout'}><VscSignIn size={20} /></Link>
-              </>
-          )}
-          </div>
-      </div>
-    )
+  return (
+    <div id="footer" className='relative'>
+        <div className="logo"><Logo /></div>
+        <h3>Portfolio {year} All rights reserved</h3>
+        <div className={`social`}>
+          {Object.keys(icon).map(item => <EditLink key={item} api={`/api/main/${item}`} edit={status=='authenticated'} name={item} value={info![item as keyof Social]!}><a href={info![item as keyof Social]!} target="_blank">{icon[item]}</a></EditLink>)}
+        </div>
+        <div className='flex flex-row justify-center items-center absolute top-1 right-1 gap-2'>
+          { status === 'loading' && <p>Loading...</p>}
+          { status === 'unauthenticated' && <Link className='cursor-pointer' href={'/api/auth/signin'}><CgLogIn size={20}/></Link>}
+          { status === 'authenticated' && (
+            <>
+              <p>{session.user?.name}</p>
+              <Link className='cursor-pointer' href={'/api/auth/signout'}><VscSignIn size={20} /></Link>
+            </>
+        )}
+        </div>
+    </div>
+  )
 }
 
 export default Footer
