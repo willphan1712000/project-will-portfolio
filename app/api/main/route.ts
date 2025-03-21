@@ -1,8 +1,7 @@
 import prisma from "@/prisma/client"
 import { NextRequest, NextResponse } from "next/server"
 
-export async function GET(request: NextRequest) {
-    await request.json()
+export async function GET() {
     const social = await prisma.social.findUnique({
         where: {
             email: process.env.WILL_EMAIL
