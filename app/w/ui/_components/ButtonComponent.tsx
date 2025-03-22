@@ -39,8 +39,8 @@ const ButtonComponent = () => {
     }
   }, [])
   return (
-    <>
-        <h1 id="select" className='text-2xl'>Button UI component</h1>
+    <div>
+        <h1 id="button" className='text-2xl'>Button UI component</h1>
         <Code filename='SolidButton.tsx' code={solid}/>
         <div className='flex justify-center'>
             <Button content='Click me' type='solid'/>
@@ -54,7 +54,7 @@ const ButtonComponent = () => {
             <Button content='Upload' id="uploadButtonDemo"/>
         </div>
         <br></br>
-    </>
+    </div>
   )
 }
 

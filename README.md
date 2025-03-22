@@ -4,8 +4,8 @@
 
 - Home page : this is where I put my experience on tech industry
 - Will Library : this is where I share my typescript project with examples of UI components, API handling, Async State Management, and Usability functions
-- Blog page : this is where I post every story and where people can contribute to the story ecosystem
-- Travel Collection page : this is where I post all my travel experience and where people can post their travel experience as well
+- Blog page : this is where I post every story
+- Travel Collection page : this is where I post all my travel experience
 
 ## If I received some feedback from you, it would be amazing for my project to be more well developed
 

@@ -17,8 +17,8 @@ const slider = `import { RangeSlider } from '@willphan1712000/w'
 const RangeSliderComponent = () => {
     const [value, setValue] = useState<number>(50)
   return (
-    <>
-        <h1 id="select" className='text-2xl'>Range Slider UI component</h1>
+    <div>
+        <h1 id="range" className='text-2xl'>Range Slider UI component</h1>
         <Code filename='RangerSlider.tsx' code={slider}/>
         <div>
             <RangeSlider keyValue='slider' range={{
@@ -27,7 +27,7 @@ const RangeSliderComponent = () => {
             }} defaultValue={value} cb={setValue}/>
         </div>
         <br></br>
-    </>
+    </div>
   )
 }
 

@@ -55,8 +55,8 @@ const TransformComponent = () => {
     }, [])
 
   return (
-    <>
-        <h1 id="select" className='text-2xl'>Transfrom UI</h1>
+    <div>
+        <h1 id="transform" className='text-2xl'>Transfrom UI</h1>
         <Code filename='Transform.tsx' code={transform}/>
         <br></br>
         <div className=' justify-center hidden'>
@@ -68,7 +68,7 @@ const TransformComponent = () => {
             <div className='controller'></div>
         </div>
         <br></br>
-    </>
+    </div>
   )
 }
 

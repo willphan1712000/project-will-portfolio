@@ -85,7 +85,7 @@ const SelectComponent = () => {
     const [singleValue, singleChange] = useState<string>('')
     const [multipleValue, multipleChange] = useState<string[]>([])
   return (
-    <>
+    <div>
         <h1 id="select" className='text-2xl'>Option Select UI component</h1>
         <Code filename='SingleSelect.tsx' code={single} />
         <div className='bg-white flex items-start justify-center p-4 rounded-md m-5 h-[20rem] overflow-hidden'>
@@ -96,7 +96,7 @@ const SelectComponent = () => {
           <Select options={options} type='multiple' change={multipleChange} value={multipleValue} size='20'/>
         </div>
         <br></br>
-    </>
+    </div>
   )
 }
 

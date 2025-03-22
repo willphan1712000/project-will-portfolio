@@ -7,6 +7,7 @@ import { CgLogIn } from 'react-icons/cg'
 import { VscSignIn } from 'react-icons/vsc'
 import Logo from './Logo'
 import EditLink from './EditLink'
+import axios from 'axios'
 
 const year = new Date().getFullYear()
 
@@ -21,7 +22,10 @@ const icon: Record<string, JSX.Element> = {
 const Footer = () => {
   const { status, data: session } = useSession()
   const {data: info, error, isLoading} = useQuery<Social>({
-    queryKey: ['info']
+    queryKey: ['info'],
+    queryFn: () => axios.get("/api/main").then(res => res.data),
+    staleTime: 60 * 1000, // 60 seconds,
+    retry: 3,
   })
 
   if(error) return null
