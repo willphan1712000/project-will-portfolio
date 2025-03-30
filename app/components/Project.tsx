@@ -3,6 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { useSession } from 'next-auth/react';
 import Wrapper from './MultiEditLink/Wrapper';
+import { RingLoader } from 'react-spinners';
 
 const Project = () => {
     const {status} = useSession()
@@ -14,7 +15,7 @@ const Project = () => {
     
     if (error) return null
     
-    if (isLoading) return <p>Loading...</p>
+    if (isLoading) return <div className='w-full flex justify-center'><RingLoader /></div>
 
     const btn_wraper = `p-[0.13rem] rounded-[0.55rem] bg-black hover:shadow-2xl transition-all duration-100 w-[10rem] h-[3rem] flex-shrink-0`
     const btn = `flex bg-black size-full rounded-[0.55rem] justify-center items-center`

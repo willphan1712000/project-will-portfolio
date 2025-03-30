@@ -5,6 +5,7 @@ import { useSession } from 'next-auth/react'
 import Image from 'next/image'
 import EditLink from './EditLink'
 import Project from './Project'
+import { RingLoader } from 'react-spinners'
 
 const Intro = () => {
   const btn_wraper = `p-[0.13rem] rounded-[0.55rem] bg-black hover:shadow-2xl transition-all duration-100 w-[7rem] h-[3rem]`
@@ -21,7 +22,7 @@ const Intro = () => {
 
   if(error) return null
 
-  if(isLoading) return <p>Loading...</p>
+  if(isLoading) return <div className='w-full flex justify-center'><RingLoader /></div>
 
   return (
     <>
