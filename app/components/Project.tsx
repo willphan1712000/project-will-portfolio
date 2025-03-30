@@ -4,39 +4,6 @@ import axios from 'axios';
 import { useSession } from 'next-auth/react';
 import Wrapper from './MultiEditLink/Wrapper';
 
-// type Project = | 'bio' | 'tv' | 'W' | 'portfolio' | 'issueTracker' | 'cm' | 'python'
-
-// const link: Record<Project, { url: string; label: string }> = {
-//     portfolio: {
-//         url: 'https://github.com/willphan1712000/will',
-//         label: 'Portfolio',
-//     },
-//     W: {
-//         url: 'https://github.com/willphan1712000/Web-Development',
-//         label: 'Web Development',
-//     },
-//     bio: {
-//         url: 'https://github.com/willphan1712000/bio',
-//         label: 'Bio',
-//     },
-//     tv: {
-//         url: 'https://github.com/willphan1712000/vtv',
-//         label: 'TV',
-//     },
-//     cm: {
-//         url: 'https://github.com/willphan1712000/cm',
-//         label: 'CMS',
-//     },
-//     issueTracker: {
-//         url: 'https://github.com/willphan1712000/issue-tracker',
-//         label: 'Issue Tracker',
-//     },
-//     python: {
-//         url: 'https://github.com/willphan1712000/willphanpy',
-//         label: 'Python',
-//     },
-// };
-
 const Project = () => {
     const {status} = useSession()
     

@@ -35,6 +35,13 @@ const tableList: {
       name: 'Transform UI',
       id: 'table_transform'
     }
+  },
+  {
+    id: 'multiedit',
+    table: {
+      name: 'Multi Edit Link UI',
+      id: 'table_multiedit'
+    }
   }
 ] 
 

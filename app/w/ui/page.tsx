@@ -2,6 +2,7 @@
 
 import styles from '../_components/style.module.css'
 import ButtonComponent from './_components/ButtonComponent'
+import MultiEditLinkComponent from './_components/MultiEditLinkComponent'
 import RangeSliderComponent from './_components/RangeSliderComponent'
 import SelectComponent from './_components/SelectComponent'
 import TableOfContents from './_components/TableOfContents'
@@ -16,6 +17,7 @@ const UI = () => {
         <ButtonComponent />
         <RangeSliderComponent />
         <TransformComponent />
+        <MultiEditLinkComponent />
       </div>
       <div className='hidden w-[20%] lg:block'>
         <TableOfContents />
