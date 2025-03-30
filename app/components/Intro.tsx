@@ -57,8 +57,6 @@ const Intro = () => {
           </div>
         </div>
       </div>
-
-      <Project />
     </>
   )
 }

@@ -44,7 +44,7 @@ export async function PUT(request: NextRequest, { params }: { params: Promise<{ 
     
     // check if the record exists
     if(!user) {
-        return NextResponse.json({ error: "Admin user does not exist" })
+        return NextResponse.json({ error: "Admin user does not exist" }, { status : 404 })
     }
     
     // get record from info database
