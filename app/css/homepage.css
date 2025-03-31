@@ -62,7 +62,7 @@ body {
 }
 .title h1 {
     color: #ffffff;
-    font-size: 4em;
+    /* font-size: 4em; */
 }
 .title h1:first-child {
     animation: firstText .8s cubic-bezier(0, 0, 0.41, 1.51);
@@ -73,7 +73,7 @@ body {
     animation-fill-mode: both;
 }
 .title h1:nth-child(3) {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     animation: thirdText .8s cubic-bezier(0, 0, 0.41, 1.51);
     animation-fill-mode: both;
     text-align: center;
