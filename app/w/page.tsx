@@ -31,12 +31,6 @@ const W = () => {
       <Skills />
       <Services />
       <Navigators />
-
-      <div className='w-[60px] h-[30px] border-white border-[2px] flex justify-center cursor-pointer' ref={outer}>
-        <div className='w-[50px] h-[20px]' ref={inner}>
-          Submit
-        </div>
-      </div>
     </>
   )
 }
