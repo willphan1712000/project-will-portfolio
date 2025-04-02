@@ -5,6 +5,7 @@ import AuthProvider from "./auth/AuthProvider";
 import "./css/homepage.css";
 import "./css/universal.css";
 import "./globals.css";
+import prisma from "@/prisma/client";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -26,6 +27,13 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const project = await prisma.project.findMany()
+  const social = await prisma.social.findUnique({
+    where: {
+      email: process.env.WILL_EMAIL
+    }
+  })
+
   return (
     <html lang="en">
       <body
@@ -34,7 +42,10 @@ export default async function RootLayout({
       >
         <Script src="https://kit.fontawesome.com/960d33c629.js" crossOrigin="anonymous" />
         
-        <AuthProvider> 
+        <AuthProvider data={{
+          project,
+          social
+        }}> 
           {children}
         </AuthProvider>
       </body>

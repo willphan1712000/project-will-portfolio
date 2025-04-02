@@ -1,21 +1,11 @@
-import { Project as ProjectSchema } from '@prisma/client';
-import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
 import { useSession } from 'next-auth/react';
+import useMyContext from '../context/Context';
 import Wrapper from './MultiEditLink/Wrapper';
-import { RingLoader } from 'react-spinners';
 
 const Project = () => {
+    const data = useMyContext()
+    const projects = data.project
     const {status} = useSession()
-    
-    const {data: projects, error, isLoading} = useQuery<ProjectSchema[]>({
-        queryKey: ['project'],
-        queryFn: () => axios.get("/api/main/project").then(res => res.data)
-    })
-    
-    if (error) return null
-    
-    if (isLoading) return <div className='w-full flex justify-center'><RingLoader /></div>
 
     const btn_wraper = `p-[0.13rem] rounded-[0.55rem] bg-black hover:shadow-2xl transition-all duration-100 w-[10rem] h-[3rem] flex-shrink-0`
     const btn = `flex bg-black size-full rounded-[0.55rem] justify-center items-center`

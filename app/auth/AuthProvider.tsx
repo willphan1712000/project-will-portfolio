@@ -7,16 +7,20 @@ import { SessionProvider } from 'next-auth/react';
 import { ReactNode } from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import { Data, MyContext } from '../context/Context';
 
-const AuthProvider = ({children} : {
-    children: ReactNode
+const AuthProvider = ({children, data} : {
+    children: ReactNode,
+    data?: Data
 }) => {
   return (
     <QueryClientProvider client={new QueryClient()}>
         <SessionProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          <MyContext.Provider value={data}>
+            <Navbar />
+            {children}
+            <Footer />
+          </MyContext.Provider>
         </SessionProvider>
     </QueryClientProvider>
 
