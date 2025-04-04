@@ -18,7 +18,10 @@ const AuthProvider = ({children, data} : {
         <SessionProvider>
           <MyContext.Provider value={data}>
             <Navbar />
-            {children}
+              <div className='hidden sm:block'>
+                {children}
+              </div>
+              <div className='sm:hidden flex items-center justify-center p-5'>Mobile View is coming soon, please use desktop view instead</div>
             <Footer />
           </MyContext.Provider>
         </SessionProvider>

@@ -45,7 +45,7 @@ export default async function RootLayout({
         <AuthProvider data={{
           project,
           social
-        }}> 
+        }}>
           {children}
         </AuthProvider>
       </body>
