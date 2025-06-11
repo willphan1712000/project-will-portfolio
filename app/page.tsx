@@ -5,7 +5,7 @@ import Intro from "./components/Intro"
 import PictureSection from "./components/PictureSection"
 import SecondTitle from "./components/SecondTitle"
 import Subbackground from "./components/Subbackground"
-import { pictureContent, pictures } from "./components/pictureContent"
+import { homePictureContent, pictures } from "./static/homePictureContent"
 import homepage from "./execute"
 import Project from "./components/Project"
 
@@ -24,7 +24,7 @@ export default
             <Intro />
             <Project />
             <SecondTitle content={{up: "Full stack journey", down: "begins here"}}/>
-            <PictureSection pictureContent={pictureContent} pictures={pictures}/>
+            <PictureSection pictureContent={homePictureContent} pictures={pictures}/>
         </div>
       </div>
     </>
