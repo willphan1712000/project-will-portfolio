@@ -6,6 +6,7 @@ import "./css/homepage.css";
 import "./css/universal.css";
 import "./globals.css";
 import prisma from "@/prisma/client";
+import database from "./database";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -27,12 +28,8 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const project = await prisma.project.findMany()
-  const social = await prisma.social.findUnique({
-    where: {
-      email: process.env.WILL_EMAIL
-    }
-  })
+  const project = database.project
+  const social = database.social
 
   return (
     <html lang="en">

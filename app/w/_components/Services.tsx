@@ -18,6 +18,7 @@ const Services = () => {
               <Divider />
                 <p className='text-[2.5rem] bg-inherit'>API Handling</p>
                 <p className='text-center'>Provide ready-to-use API fetch, boosting asynchronous features of the web</p>
+                <p className='text-center'>Coming soon</p>
             </div>
         </div>
         <div className='flex flex-col items-start bg-inherit z-[1]'>
@@ -25,6 +26,7 @@ const Services = () => {
                 <Divider />
                 <p className='text-[2.5rem] bg-inherit'>Async State Management</p>
                 <p className='text-center'>Provide better way to deal with async state management using Promise techniques</p>
+                <p className='text-center'>Coming soon</p>
             </div>
         </div>
         <div className='flex flex-col items-end bg-inherit z-[1]'>
@@ -32,6 +34,7 @@ const Services = () => {
                 <Divider />
                 <p className='text-[2.5rem]'>Usability</p>
                 <p className='text-center'>Provide small detail implementations</p>
+                <p className='text-center'>Coming soon</p>
             </div>
         </div>
         <div className='absolute border-[#35313e] border-[1px] w-[1px] h-full top-0 left-[50%] z-[0]'></div>

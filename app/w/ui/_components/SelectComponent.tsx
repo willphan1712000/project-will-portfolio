@@ -1,8 +1,9 @@
 'use client'
 
-import { Select } from '@willphan1712000/w';
+import { DropdownSelect, MultiSelect } from '@willphan1712000/frontend';
 import { useState } from 'react';
 import Code from '../../_components/Code';
+import { tableList } from './TableOfContents';
 
 const options = [
   { label: 'Nodejs', value: 'Nodejs' },
@@ -56,7 +57,7 @@ const options = [
   // { label: 'Csv', value: 'Csv' },
 ];
 
-const single = `import { Select } from '@willphan1712000/w';
+const single = `import { DropdownSelect } from '@willphan1712000/frontend';
 
   const options = [
     { label: 'Nodejs', value: 'Nodejs' },
@@ -64,11 +65,16 @@ const single = `import { Select } from '@willphan1712000/w';
     { label: 'React', value: 'React' },
   ]
 
-  const SingleSelect = () => {
+  const DropdownSelect = () => {
     const [value, setValue] = useState<any[]>([])
-    return <Select options={options} type='single' change={setValue} value={value} size='20'/>
+    return <DropdownSelect 
+              onChange={singleChange}
+              value={singleValue}
+              options={options}
+              width='300'
+          />
   }`
-const multiple = `import { Select } from '@willphan1712000/w';
+const multiple = `import { MultiSelect } from '@willphan1712000/frontend';
 
   const options = [
     { label: 'Nodejs', value: 'Nodejs' },
@@ -78,7 +84,12 @@ const multiple = `import { Select } from '@willphan1712000/w';
 
   const MultiSelect = () => {
     const [value, setValue] = useState<any[]>([])
-    return <Select options={options} type='multiple' change={setValue} value={value} size='20'/>
+    return <MultiSelect 
+            onChange={multipleChange}
+            value={multipleValue}
+            options={options}
+            width='300'
+          />
   }`
 
 const SelectComponent = () => {
@@ -86,14 +97,24 @@ const SelectComponent = () => {
     const [multipleValue, multipleChange] = useState<string[]>([])
   return (
     <div>
-        <h1 id="select" className='text-2xl'>Option Select UI component</h1>
-        <Code filename='SingleSelect.tsx' code={single} />
-        <div className='bg-white flex items-start justify-center p-4 rounded-md m-5 h-[20rem] overflow-hidden'>
-          <Select options={options} type='single' change={singleChange} value={singleValue} size='20'/>
+        <h1 id={tableList[0].id} className='text-2xl'>{tableList[0].table.name}</h1>
+        <Code filename='DropdownSelect.tsx' code={single} />
+        <div className='bg-white flex items-start justify-center p-4 rounded-md m-5 h-[20rem] overflow-hidden text-black'>
+          <DropdownSelect 
+              onChange={singleChange}
+              value={singleValue}
+              options={options}
+              width='300'
+          />
         </div>
         <Code filename='MultiSelect.tsx' code={multiple} />
-        <div className='bg-white flex items-start justify-center p-4 rounded-md m-5 h-[20rem] overflow-hidden'>
-          <Select options={options} type='multiple' change={multipleChange} value={multipleValue} size='20'/>
+        <div className='bg-white flex items-start justify-center p-4 rounded-md m-5 h-[20rem] overflow-hidden text-black'>
+          <MultiSelect 
+            onChange={multipleChange}
+            value={multipleValue}
+            options={options}
+            width='300'
+          />
         </div>
         <br></br>
     </div>

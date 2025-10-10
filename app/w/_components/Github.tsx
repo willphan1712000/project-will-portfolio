@@ -2,9 +2,9 @@ import { $$ } from '@willphan1712000/w'
 import { useEffect, useRef, useState } from 'react'
 import { FaCheck } from 'react-icons/fa'
 
-const github = 'https://github.com/willphan1712000/Web-development'
-const githubClone = 'git clone https://github.com/willphan1712000/Web-Development.git'
-const npm = 'npm i @willphan1712000/w'
+const github = 'https://github.com/willphan1712000/project-will-frontend'
+const githubClone = 'git clone https://github.com/willphan1712000/project-will-frontend.git'
+const npm = 'npm i @willphan1712000/frontend'
 
 const Github = () => {
     const copybtn = useRef<HTMLSpanElement>(null)

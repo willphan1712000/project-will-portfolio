@@ -8,7 +8,6 @@ import Skills from './_components/Skills'
 import Title from './_components/Title'
 
 const W = () => {
-  const inner = useRef<HTMLDivElement>(null)
   const outer = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -17,7 +16,7 @@ const W = () => {
     // }, {
     //   capture: false
     // })
-    outer.current?.addEventListener('click', e => {
+    outer.current?.addEventListener('click', () => {
       console.log("outer")
     }, {
       capture: false

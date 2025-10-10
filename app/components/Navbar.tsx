@@ -9,6 +9,7 @@ import { ImBlog } from 'react-icons/im'
 import { IoLibrary } from 'react-icons/io5'
 import { VscSignIn } from 'react-icons/vsc'
 import Logo from './Logo'
+import Image from 'next/image'
 
 const href: Record<string, string> = {
   'Home': '/',
@@ -58,7 +59,7 @@ const Navbar = () => {
         <div className='flex flex-row justify-center items-center gap-2'>
           { status === 'authenticated' && (
             <>
-              <img src={ session.user?.image! } alt='' width="25" height="25" className='rounded-full'/>
+              <Image src={ session.user?.image! } alt='' width="25" height="25" className='rounded-full'/>
               <p>{session.user?.name}</p>
               <Link className='cursor-pointer' href={'/api/auth/signout'}><VscSignIn size={20} /></Link>
             </>

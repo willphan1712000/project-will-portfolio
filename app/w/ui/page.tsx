@@ -1,12 +1,11 @@
 'use client'
 
 import styles from '../_components/style.module.css'
-import ButtonComponent from './_components/ButtonComponent'
-import MultiEditLinkComponent from './_components/MultiEditLinkComponent'
+import ColorPickerSliderComponent from './_components/ColorPickerSliderComponent'
+import OptionSliderComponent from './_components/OptionSliderComponent'
 import RangeSliderComponent from './_components/RangeSliderComponent'
 import SelectComponent from './_components/SelectComponent'
 import TableOfContents from './_components/TableOfContents'
-import TransformComponent from './_components/TransformComponent'
 
 const UI = () => {
   return (
@@ -14,10 +13,9 @@ const UI = () => {
       <div className='lg:w-[80%] w-full'>
         <h1 className={styles.text}>UI Components</h1>
         <SelectComponent />
-        <ButtonComponent />
         <RangeSliderComponent />
-        <TransformComponent />
-        <MultiEditLinkComponent />
+        <ColorPickerSliderComponent />
+        <OptionSliderComponent />
       </div>
       <div className='hidden w-[20%] lg:block'>
         <TableOfContents />

@@ -1,7 +1,7 @@
 import { useIntersectionObserver } from '@willphan1712000/w'
 import { useEffect } from 'react'
 
-const tableList: {
+export const tableList: {
   id: string,
   table: {
     name: string,
@@ -16,31 +16,24 @@ const tableList: {
     }
   },
   {
-    id: "button",
-    table: {
-      name: 'Button UI component',
-      id: 'table_button'
-    }
-  },
-  {
-    id: 'range',
+    id: 'rangeSlider',
     table: {
       name: 'Range Slider UI component',
-      id: 'table_range'
+      id: 'table_rangeSlider'
     }
   },
   {
-    id: 'transform',
+    id: 'colorPickerSlider',
     table: {
-      name: 'Transform UI',
-      id: 'table_transform'
+      name: 'Color Picker Slider UI component',
+      id: 'table_colorPickerSlider'
     }
   },
   {
-    id: 'multiedit',
+    id: 'optionSlider',
     table: {
-      name: 'Multi Edit Link UI',
-      id: 'table_multiedit'
+      name: 'Option Slider UI component',
+      id: 'table_optionSlider'
     }
   }
 ] 

@@ -26,7 +26,7 @@ const Wrapper = ({projects} : Props) => {
     const [values, setValues] = useState<Value[]>(typeAdapter(projects))
     const handleSubmit = async () => {
         setSubmitLabel("Posting...")
-        const [error, _] = await $$$().wPromise().Try(axios.put("/api/main/project", { urlObj: typeRestoreAdapter(values) }))
+        const [error] = await $$$().wPromise().Try(axios.put("/api/main/project", { urlObj: typeRestoreAdapter(values) }))
 
         if (error) {
             console.log(error)
