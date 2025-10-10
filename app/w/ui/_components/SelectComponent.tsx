@@ -66,7 +66,7 @@ const single = `import { DropdownSelect } from '@willphan1712000/frontend';
   ]
 
   const DropdownSelect = () => {
-    const [value, setValue] = useState<any[]>([])
+    const [value, setValue] = useState<any[]>('')
     return <DropdownSelect 
               onChange={singleChange}
               value={singleValue}

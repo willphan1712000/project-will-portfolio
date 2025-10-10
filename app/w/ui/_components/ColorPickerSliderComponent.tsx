@@ -6,7 +6,7 @@ import Code from '../../_components/Code'
 import { ColorPickerSlider } from '@willphan1712000/frontend'
 import { tableList } from './TableOfContents'
 
-const slider = `import { ColorPickerSlider } from '@willphan1712000/w'
+const slider = `import { ColorPickerSlider } from '@willphan1712000/frontend';
 
   const ColorPickerSlider = () => {
     const [value, setValue] = useState<number>('#eeff00')

@@ -6,14 +6,18 @@ import Code from '../../_components/Code'
 import { RangeSlider } from '@willphan1712000/frontend'
 import { tableList } from './TableOfContents'
 
-const slider = `import { RangeSlider } from '@willphan1712000/w'
+const slider = `import { RangeSlider } from '@willphan1712000/frontend';
 
   const RangerSlider = () => {
-    const [value, setValue] = useState<number>(50)
-    return <RangeSlider keyValue='slider' range={{
-        min: 0,
-        max: 100
-    }} defaultValue={value} cb={setValue}/>
+    const [value, setValue] = useState<number>("50")
+    return <RangeSlider
+              min="10"
+              max="400" 
+              onChange={setValue}
+              value={value}
+              color='#673ab7'
+              width='200'
+            />
   }`
 
 const RangeSliderComponent = () => {
