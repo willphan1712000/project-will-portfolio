@@ -149,7 +149,7 @@ body {
 }
 #introduction .img {
     flex: 1;
-    padding: 4rem;
+    padding: 2rem;
 }
 #introduction .text {
     display: flex;
