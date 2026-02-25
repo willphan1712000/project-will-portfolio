@@ -15,38 +15,44 @@ export default Object.freeze({
         {
             id: 0,
             email: "",
-            name: "Portfolio",
-            url: "https://github.com/willphan1712000/project-will-porfolio"
+            name: "Digital Business Card",
+            url: "https://github.com/willphan1712000/project-bio"
         },
         {
             id: 1,
             email: "",
-            name: "NPM-Frontend",
+            name: "Frontend Library ",
             url: "https://github.com/willphan1712000/project-will-frontend"
         },
         {
             id: 2,
             email: "",
-            name: "Python-library",
-            url: "https://github.com/willphan1712000/project-will-python"
+            name: "Portfolio",
+            url: "https://github.com/willphan1712000/project-will-porfolio"
         },
         {
             id: 3,
             email: "",
-            name: "Link Bio",
-            url: "https://github.com/willphan1712000/project-bio"
+            name: "Python Library",
+            url: "https://github.com/willphan1712000/project-will-python"
         },
         {
             id: 4,
             email: "",
-            name: "TV",
-            url: "https://github.com/willphan1712000/project-vertical-tv"
+            name: "CMS",
+            url: "https://github.com/willphan1712000/project-content-management"
         },
         {
             id: 5,
             email: "",
-            name: "CMS",
-            url: "https://github.com/willphan1712000/project-content-management"
+            name: "Online Shopping",
+            url: "https://github.com/willphan1712000/project-SpringBoot"
+        },
+        {
+            id: 6,
+            email: "",
+            name: "Checkout",
+            url: "https://github.com/willphan1712000/project-ASP.NET"
         },
     ]
 })
