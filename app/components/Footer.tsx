@@ -4,6 +4,7 @@ import { JSX } from 'react'
 import useMyContext from '../context/Context'
 import EditLink from './EditLink'
 import Logo from './Logo'
+import config from '@/app/static/config';
 
 const year = new Date().getFullYear()
 
@@ -21,7 +22,10 @@ const Footer = () => {
   const { status } = useSession()
 
   return (
-    <div id="footer" className='relative'>
+    <div id="footer" className='relative' style={{
+      "--primary-color": config.primaryColor,
+      "--second-color": config.secondColor
+    } as React.CSSProperties}>
         <div className="logo"><Logo /></div>
         <h3>Portfolio {year} All rights reserved</h3>
         <div className={`social`}>

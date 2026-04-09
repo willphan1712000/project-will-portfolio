@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import { getScrollVar } from "./config";
+import { getScrollVar } from "./static/config";
 
 export default function homepage() {
     window.scrollTo(0, 0)
