@@ -5,7 +5,7 @@ import config from '@/app/static/config';
 
 const Avatar = () => {
   return (
-    <div className="background">
+    <div className={styles.background}>
         <div className={styles.avatar} style={{
           "--primary-color": config.primaryColor
         } as React.CSSProperties}>

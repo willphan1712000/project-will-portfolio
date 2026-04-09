@@ -1,10 +1,11 @@
 import React from 'react'
-import home from '../static/home'
-import Buttons from './Buttons'
+import styles from './title.module.css'
+import home from '@/app/static/home'
+import Buttons from '@/app/components/Subbackground/Buttons/Buttons'
 
 const Title = () => {
   return (
-    <div className="title">
+    <div className={styles.title}>
         <h1 className='text-[2rem] md:text-[3rem]'>My Portfolio</h1>
         <h1 className='text-[1.5rem] md:text-[2rem]'>{home.heading}</h1>
         <div className='pl-5'>

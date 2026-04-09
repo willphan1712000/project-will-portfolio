@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSession } from 'next-auth/react'
-import useMyContext from '../context/Context'
-import EditLink from './EditLink'
+import useMyContext from '@/app/context/Context'
+import EditLink from '@/app/components/EditLink'
 const btn_wraper = `p-[0.13rem] rounded-[0.55rem] bg-black hover:shadow-2xl transition-all duration-100 w-[7rem] h-[3rem]`
 const btn = `flex bg-black size-full rounded-[0.55rem] justify-center items-center`
 

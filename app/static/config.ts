@@ -9,7 +9,8 @@ function getScrollVar() {
 
 const config = {
     primaryColor: "#9276ff",
-    secondColor: "#3ea2cf"
+    secondColor: "#3ea2cf",
+    maxWidth: "1500px"
 }
 
 export default config;
