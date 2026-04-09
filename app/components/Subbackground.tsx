@@ -1,21 +1,28 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import Background from './Background'
-import home from '../static/home'
+import Title from './Title'
+import Avatar from './Avatar/Avatar'
+import config from '@/app/static/config'
 
 const Subbackground = () => {
   return (
-    <div className="subbackground md:!h-screen">
-        <Background />
-        <div className="title">
-          <h1 className='text-[2rem] md:text-[3rem]'>My</h1>
-          <h1 className='text-[2rem] md:text-[3rem]'>Portfolio</h1>
-          <h1 className='text-[1.5rem] md:text-[2rem]'>{home.heading}</h1>
+    <div className='subbackground-container'>
+      <div className='subbackground-wrapper' style={{
+          "--primary-color": config.primaryColor,
+          "--second-color": config.secondColor
+        } as React.CSSProperties}>
+        <div className="subbackground md:!h-screen" style={{
+          "--primary-color": config.primaryColor,
+          "--second-color": config.secondColor
+        } as React.CSSProperties}>
+            <Avatar />
+            <Title />
+            <div className="subbackground__goToNext" title='Jump to next page' tabIndex={0}>
+              <FontAwesomeIcon icon={faArrowDown} />
+            </div>
         </div>
-        <div className="subbackground__goToNext">
-          <FontAwesomeIcon icon={faArrowDown} />
-        </div>
+      </div>
     </div>
   )
 }
