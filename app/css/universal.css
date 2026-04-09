@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&family=League+Spartan:wght@800&family=Playfair+Display:ital,wght@0,900;1,900&display=swap'); /* Update 3 */
 :root {
    --main-color: #fff;
-   --footer-color: #e7e5e2;
    --scroll: 0;
 }
 * {

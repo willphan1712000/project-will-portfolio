@@ -6,7 +6,7 @@ import "./css/homepage.css";
 import "./css/universal.css";
 import "./globals.css";
 import prisma from "@/prisma/client";
-import database from "./database";
+import database from "./static/database";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",

@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import { getScrollVar } from "./config";
+import { getScrollVar } from "./static/config";
 
 export default function homepage() {
     window.scrollTo(0, 0)
@@ -13,7 +13,7 @@ export default function homepage() {
     // }
 
     // Make the button able to scroll to a specific section of the page
-    $(".subbackground .subbackground__goToNext").click(() => {
+    $("#goToNextPage").click(() => {
         const intro = document.getElementById("introduction")
         const pictureSection = document.querySelector(".picture-section")
 

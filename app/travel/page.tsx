@@ -6,7 +6,7 @@ import SecondTitle from "../components/SecondTitle"
 import homepage from "../execute"
 import Card from "./_components/Card"
 import { pictureContent, pictures } from "./pictureContent"
-import Subbackground from "../components/Subbackground"
+import Subbackground from "../components/Subbackground/Subbackground"
 
 
 export default function Blog() {

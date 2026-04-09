@@ -5,7 +5,7 @@ import PictureSection from "../components/PictureSection"
 import SecondTitle from "../components/SecondTitle"
 import homepage from "../execute"
 import { pictureContent, pictures } from "./pictureContent"
-import Subbackground from "../components/Subbackground"
+import Subbackground from "../components/Subbackground/Subbackground"
 
 export default function Blog() {
   useEffect(() => {

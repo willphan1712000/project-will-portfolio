@@ -47,7 +47,7 @@ const Navbar = () => {
   }, [])
   
   return (
-    <div id="nav-bar" className='fixed top-0 md:relative flex flex-col md:flex-row items-center justify-center p-[5px] z-[3] bg-white w-full h-20 transition-all'>
+    <div id="nav-bar" className='fixed top-0 md:relative flex flex-col md:flex-row items-center justify-center p-[5px] z-[3] w-full h-20 transition-all bg-transparent'>
         <div className="nav-bar__logo mr-[40px] hidden md:flex">
             <Logo />
         </div>
