@@ -1,13 +1,13 @@
 'use client'
 
 import { useEffect } from "react"
-import Intro from "./components/Intro"
+import Intro from "./components/Intro/Intro"
 import PictureSection from "./components/PictureSection"
 import SecondTitle from "./components/SecondTitle"
-import Subbackground from "./components/Subbackground"
+import Subbackground from "./components/Subbackground/Subbackground"
 import { homePictureContent, pictures } from "./static/homePictureContent"
 import homepage from "./execute"
-import Project from "./components/Project"
+import Project from "./components/Project/Project"
 
 export default
  function Home() {
