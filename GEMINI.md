@@ -70,8 +70,3 @@ The Prisma schema includes standard NextAuth models (`User`, `Account`, `Session
 - `tailwind.config.ts`: Tailwind CSS theme and plugin setup.
 - `tsconfig.json`: TypeScript compiler options.
 - `app/static/config.ts`: Global application constants like primary/secondary colors.
-
-## Happy with this project
-- If I received some feedback from you, it would be amazing for my project to be more well developed
-
-- You can connect to me at [Facebook](https://www.facebook.com/phanthanhnha123200/) [Instagram](https://www.instagram.com/phanthanhnha_0117/)
