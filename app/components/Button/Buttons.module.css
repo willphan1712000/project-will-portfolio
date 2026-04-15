@@ -1,21 +1,5 @@
-.btnWrapper {
-    border-radius: 20px;
-    transition: all .1s linear;
-    background-color: color-mix(in srgb, var(--primary-color) 15%, transparent);
-    border: solid 1px color-mix(in srgb, var(--primary-color) 15%, transparent);
-}
-
-.btnWrapper:hover {
-    border: solid 1px color-mix(in srgb, var(--primary-color) 100%, transparent);
-}
-
 .btn {
-    display: flex;
-    padding: 10px 20px;
-    color: var(--primary-color);
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    justify-content: center;
-    align-items: center;
+    padding: 5px 15px !important;
+    font-size: 17px !important;
+    white-space: nowrap;
 }

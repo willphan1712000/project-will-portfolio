@@ -5,7 +5,7 @@ import config from '@/app/static/config'
 
 const Intro = () => {
   return (
-    <>
+    <div className='p-[30px]'>
       <div className={styles.border} style={{
             "--primary-color": config.primaryColor,
             "--second-color": config.secondColor
@@ -18,7 +18,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

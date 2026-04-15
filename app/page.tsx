@@ -8,6 +8,7 @@ import Subbackground from "./components/Subbackground/Subbackground"
 import { homePictureContent, pictures } from "./static/homePictureContent"
 import homepage from "./execute"
 import Project from "./components/Project/Project"
+import home from "./static/home"
 
 export default
  function Home() {
@@ -23,7 +24,7 @@ export default
         <div id="main" className="md:!h-[800vh] max-w-[1500px] w-full">
             <Intro />
             <Project />
-            <SecondTitle content={{up: "Full stack journey", down: "begins here"}}/>
+            <SecondTitle content={{up: home.up, down: home.down}}/>
             <PictureSection pictureContent={homePictureContent} pictures={pictures}/>
         </div>
       </div>
