@@ -11,7 +11,7 @@ const Project = () => {
     const {status} = useSession()
 
     return (
-        <div className='p-[2rem]'>
+        <div className='p-[30px]'>
             <div className={styles.border} style={{
                     "--primary-color": config.primaryColor,
                     "--second-color": config.secondColor
