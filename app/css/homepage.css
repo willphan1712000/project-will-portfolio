@@ -41,26 +41,12 @@ body {
     flex: 1;
     padding: 2rem;
 }
-#introduction .text {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    flex: 1;
-}
+
 #introduction .img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-}
-
-#introduction .text .heading {
-    font-size: 2rem;
-    padding: 0 1rem;
-}
-#introduction .text .des {
-    font-size: 20px;
-    padding: 30px;
 }
 
 .title__second {

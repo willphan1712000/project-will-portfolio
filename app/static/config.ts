@@ -10,6 +10,7 @@ function getScrollVar() {
 const config = {
     primaryColor: "#9276ff",
     secondColor: "#3ea2cf",
+    thirdColor: "purple",
     maxWidth: "1500px"
 }
 

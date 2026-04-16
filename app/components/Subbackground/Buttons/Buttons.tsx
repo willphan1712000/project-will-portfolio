@@ -10,7 +10,7 @@ const Buttons = () => {
 
     const {status} = useSession()
   return (
-    <div className="p-[2rem] flex flex-col justify-center items-center z-[2]">
+    <div className="py-[1.2rem] flex flex-col justify-center items-center z-[2]">
         <div className="flex items-center justify-center md:flex-row gap-3 text-white">
             <EditLink edit={status == 'authenticated'} api="/api/main/linkedin" name="Linkedin" value={social?.linkedin ?? ""}>
                 <Button link={social?.linkedin ?? ""} name='Linkedin'/>

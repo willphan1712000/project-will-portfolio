@@ -30,6 +30,16 @@
     display: flex;
     justify-content: flex-end;
     padding: 30px;
+    animation: fadeIn 1s ease-in-out 1s both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .background img {
