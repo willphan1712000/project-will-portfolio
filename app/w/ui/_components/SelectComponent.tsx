@@ -100,12 +100,13 @@ const SelectComponent = () => {
         <h1 id={tableList[0].id} className='text-2xl'>{tableList[0].table.name}</h1>
         <Code filename='DropdownSelect.tsx' code={single} />
         <div className='bg-white flex items-start justify-center p-4 rounded-md m-5 h-[20rem] overflow-hidden text-black'>
-          <DropdownSelect 
-              onChange={singleChange}
-              value={singleValue}
-              options={options}
-              width='300'
-          />
+          <div className='w-[300px]'>
+            <DropdownSelect 
+                onChange={singleChange}
+                value={singleValue}
+                options={options}
+            />
+          </div>
         </div>
         <Code filename='MultiSelect.tsx' code={multiple} />
         <div className='bg-white flex items-start justify-center p-4 rounded-md m-5 h-[20rem] overflow-hidden text-black'>
