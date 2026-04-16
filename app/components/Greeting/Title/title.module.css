@@ -26,3 +26,13 @@
         opacity: 1;
     }
 }
+
+.subheadingContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.subheading {
+    width: fit-content;
+}

@@ -1,4 +1,4 @@
-import Buttons from '@/app/components/Subbackground/Buttons/Buttons';
+import Buttons from '@/app/components/Greeting/Buttons/Buttons';
 import config from '@/app/static/config';
 import home from '@/app/static/home';
 import { ModernButton } from '@willphan1712000/frontend';
@@ -8,7 +8,11 @@ import styles from './title.module.css';
 const Title = () => {
   return (
     <div className={styles.title}>
-        <ModernButton first={config.thirdColor}>Bachelor of Science in Computer Science</ModernButton>
+        <div className={styles.subheadingContainer}>
+          {home.subheading.map(sub => (
+            <ModernButton key={sub} first={config.thirdColor} className={styles.subheading}>{sub}</ModernButton>
+          ))}
+        </div>
         <h1 className='text-[2rem] md:text-[3rem]'>{home.heading}</h1>
         <div className='pl-5'>
             {home.titles.map((title, index) => (

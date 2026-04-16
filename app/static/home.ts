@@ -1,4 +1,5 @@
 export default Object.freeze({
+    subheading: ["Bachelor of Science in Computer Science", "Software Engineering"],
     heading: "I am Will Phan",
     titles: ["Fullstack", "DevOps", "AI/ML"],
     intro: "Bridging Visionary Innovation with Scalable Engineering",

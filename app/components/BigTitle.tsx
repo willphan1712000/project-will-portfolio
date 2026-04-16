@@ -7,7 +7,7 @@ interface Props {
   }
 }
 
-const SecondTitle = ({content}: Props) => {
+const BigTitle = ({content}: Props) => {
   return (
     <div className="title__second">
         <div className="up">{content.up}</div>
@@ -16,4 +16,4 @@ const SecondTitle = ({content}: Props) => {
   )
 }
 
-export default SecondTitle
+export default BigTitle

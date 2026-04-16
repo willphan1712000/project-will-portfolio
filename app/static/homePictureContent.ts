@@ -1,4 +1,4 @@
-import { Content } from "../components/PictureSection"
+import { Content } from "../components/InfoStream"
 
 const homePictureContent: Content = [
         {
