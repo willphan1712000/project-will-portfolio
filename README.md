@@ -33,7 +33,15 @@ A personal portfolio and interactive library website built using Next.js, TypeSc
 ## 🏗 Key Components & Features
 
 ### Home Page
-Displays introductory content, professional experience, and full-stack journey.
+Displays introductory content, professional experience, and software engineering journey.
+- Greeting
+   - Avatar
+   - Title
+   - Buttons
+- Intro
+- Project
+- BigTitle
+- InfoStream
 
 ### Will Library (`/w`)
 An interactive section sharing TypeScript projects with examples of:

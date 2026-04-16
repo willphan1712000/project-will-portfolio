@@ -1,26 +1,20 @@
 'use client'
 
-import { useEffect } from "react"
-import PictureSection from "../components/PictureSection"
-import SecondTitle from "../components/SecondTitle"
-import homepage from "../execute"
+import InfoStream from "../components/InfoStream"
+import BigTitle from "../components/BigTitle"
 import Card from "./_components/Card"
 import { pictureContent, pictures } from "./pictureContent"
-import Subbackground from "../components/Subbackground/Subbackground"
+import Greeting from "../components/Greeting/Greeting"
 
 
 export default function Blog() {
-  useEffect(() => {
-    homepage()
-  }, [])
-
   return (
     <>
-      <Subbackground />
+      <Greeting />
       <div className="flex justify-center items-center w-full">
         <div id="main" className="md:!h-[800vh] max-w-[1500px] w-[1500px]">
-            <SecondTitle content={{up: "My travel", down: "begins"}}/>
-            <PictureSection pictureContent={pictureContent} pictures={pictures}/>
+            <BigTitle content={{up: "My travel", down: "begins"}}/>
+            <InfoStream pictureContent={pictureContent} pictures={pictures}/>
         </div>
       </div>
 
