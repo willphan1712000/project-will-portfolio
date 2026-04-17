@@ -23,7 +23,7 @@ const Title = () => {
                       title
                     ]}
                     wrapper="span"
-                    speed={85}
+                    speed={75}
                     repeat={0}
                     cursor={false}
                   />

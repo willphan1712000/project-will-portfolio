@@ -67,12 +67,10 @@ body {
     right: -50vw;
 }
 
-.picture-section {
+/* .picture-section {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    /* position: -webkit-sticky;
-    position: sticky; */
     top: 0;
 }
 .picture-section .picture-section__text {
@@ -129,7 +127,7 @@ body {
 }
 .picture-section .picture-section__pics .picture-section__pics--section.active {
     opacity: 1;
-}
+} */
 
 #footer {
     background-image: 

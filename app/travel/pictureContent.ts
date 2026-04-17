@@ -1,32 +1,27 @@
-type Content = Array<{
-    heading: string,
-    des: string
-}>
-
-const pictureContent: Content = [
+const pictureContent = [
         {
             heading: "Lookout Mountain - Tennessee, USA",
-            des: ""
+            des: [""]
         },
         {
             heading: "Ruby Falls - Tennessee, USA",
-            des: ""
+            des: [""]
         },
         {
             heading: "North Carolina, USA",
-            des: ""
+            des: [""]
         },
         {
             heading: "Chicago 1 - Illinois, USA",
-            des: "This is THE BEAN at night"
+            des: ["This is THE BEAN at night"]
         },
         {
             heading: "Chicago 2 - Illinois, USA",
-            des: "This picture was taken close to the Michigan lake, where the strong wind is formed covering the entire city."
+            des: ["This picture was taken close to the Michigan lake, where the strong wind is formed covering the entire city."]
         },
         {
             heading: "Chicago 3 - Illinois, USA",
-            des: "There are my friends with me on the trip"
+            des: ["There are my friends with me on the trip"]
         }
 ]
 
