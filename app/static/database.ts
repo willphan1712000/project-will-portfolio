@@ -10,49 +10,5 @@ export default Object.freeze({
         youtube: "https://www.youtube.com/@nhaphan5748",
         github: "https://github.com/willphan1712000",
         resume: "https://drive.google.com/open?id=1jWQr8gc_S_VDfwzZ_2uoDnznIPo36TkZ&usp=drive_fs"
-    },
-    project: [
-        {
-            id: 0,
-            email: "",
-            name: "Digital Business Card",
-            url: "https://github.com/willphan1712000/project-bio"
-        },
-        {
-            id: 1,
-            email: "",
-            name: "Frontend Library ",
-            url: "https://github.com/willphan1712000/project-will-frontend"
-        },
-        {
-            id: 2,
-            email: "",
-            name: "Portfolio",
-            url: "https://github.com/willphan1712000/project-will-porfolio"
-        },
-        {
-            id: 3,
-            email: "",
-            name: "Python Library",
-            url: "https://github.com/willphan1712000/project-will-python"
-        },
-        {
-            id: 4,
-            email: "",
-            name: "CMS",
-            url: "https://github.com/willphan1712000/project-content-management"
-        },
-        {
-            id: 5,
-            email: "",
-            name: "Online Shopping",
-            url: "https://github.com/willphan1712000/project-SpringBoot"
-        },
-        {
-            id: 6,
-            email: "",
-            name: "Checkout",
-            url: "https://github.com/willphan1712000/project-ASP.NET"
-        },
-    ]
+    }
 })

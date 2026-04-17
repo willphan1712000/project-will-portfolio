@@ -1,5 +1,0 @@
-.border {
-    background: linear-gradient(90deg, var(--primary-color) 0.000%, var(--second-color) 100.000%);
-    border-radius: 0.7rem;
-    padding: 0.13rem;
-}

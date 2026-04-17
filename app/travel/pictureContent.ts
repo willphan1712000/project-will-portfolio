@@ -1,37 +1,34 @@
 const pictureContent = [
         {
-            heading: "Lookout Mountain - Tennessee, USA",
-            des: [""]
+            title: "Lookout Mountain - Tennessee, USA",
+            des: [""],
+            picture: `/assets/travel/TN/1.JPG`
         },
         {
-            heading: "Ruby Falls - Tennessee, USA",
-            des: [""]
+            title: "Ruby Falls - Tennessee, USA",
+            des: [""],
+            picture: `/assets/travel/TN/2.JPG`
         },
         {
-            heading: "North Carolina, USA",
-            des: [""]
+            title: "North Carolina, USA",
+            des: [""],
+            picture: `/assets/travel/NC/1.jpg`
         },
         {
-            heading: "Chicago 1 - Illinois, USA",
-            des: ["This is THE BEAN at night"]
+            title: "Chicago 1 - Illinois, USA",
+            des: ["This is THE BEAN at night"],
+            picture: `/assets/travel/IL/1.JPG`
         },
         {
-            heading: "Chicago 2 - Illinois, USA",
-            des: ["This picture was taken close to the Michigan lake, where the strong wind is formed covering the entire city."]
+            title: "Chicago 2 - Illinois, USA",
+            des: ["This picture was taken close to the Michigan lake, where the strong wind is formed covering the entire city."],
+            picture: `/assets/travel/IL/3.JPG`
         },
         {
-            heading: "Chicago 3 - Illinois, USA",
-            des: ["There are my friends with me on the trip"]
+            title: "Chicago 3 - Illinois, USA",
+            des: ["There are my friends with me on the trip"],
+            picture: `/assets/travel/IL/2.JPG`
         }
-]
-
-const pictures: string[] = [
-    `/assets/travel/TN/1.JPG`,
-    `/assets/travel/TN/2.JPG`,
-    `/assets/travel/NC/1.jpg`,
-    `/assets/travel/IL/1.JPG`,
-    `/assets/travel/IL/3.JPG`,
-    `/assets/travel/IL/2.JPG`
 ]
 
 const collection:{
@@ -98,4 +95,4 @@ const collection:{
     }
 }
 
-export {pictureContent, pictures, collection}
+export {pictureContent, collection}
