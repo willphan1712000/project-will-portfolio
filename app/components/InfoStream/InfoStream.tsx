@@ -7,19 +7,18 @@ export type Content = {
     title?: string,
     tech?: string[],
     date?: string[],
-    des?: string[]
+    des?: string[],
+    link?: string,
+    picture?: string
 }
 
 export type Picture = string[] | undefined
 
-const InfoStream = ({ pictureContent, pictures }: { pictureContent: Content[], pictures: Picture }) => {
+const InfoStream = ({ contents }: { contents: Content[] }) => {
   const infoStreamRef = useRef<HTMLDivElement>(null);
-  const [error, setError] = useState<boolean>(false);
   const [isActive, setActive] = useState<number>(-1);
 
   useEffect(() => {
-    if(!pictures) return;
-    if(pictureContent.length !== pictures.length) return setError(true);
     /**
      * 
      * @returns [distance to the top, how far the top of the screen is scrolled in %]
@@ -67,19 +66,17 @@ const InfoStream = ({ pictureContent, pictures }: { pictureContent: Content[], p
 
     return () => document.removeEventListener("scroll", handler)
   }, [])
-
-  if(error || !pictures) return <p>There is something wrong</p>
   
   return (
     <div className={styles.infoStream} ref={infoStreamRef}>
         <div className={styles.infoCardContainer}>
-          {pictureContent.map((item, i) => (
-              <InfoCard key={i} item={item} />
+          {contents.map((item, index) => (
+              <InfoCard key={index} item={item} />
           ))}
         </div>
         <div className={styles.infoPictureContainer}>
-          {pictures.map((item, index) => (
-            <InfoPicture key={item} src={item} isActive={index === isActive} />
+          {contents.map((item, index) => (
+            <InfoPicture key={index} src={item.picture} isActive={index === isActive} />
           ))}
         </div>
     </div>

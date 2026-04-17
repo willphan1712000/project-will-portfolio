@@ -3,7 +3,7 @@
 import InfoStream from "../components/InfoStream/InfoStream"
 import BigTitle from "../components/BigTitle"
 import Card from "./_components/Card"
-import { pictureContent, pictures } from "./pictureContent"
+import { pictureContent } from "./pictureContent"
 import Greeting from "../components/Greeting/Greeting"
 
 
@@ -14,7 +14,7 @@ export default function Blog() {
       <div className="flex justify-center items-center w-full">
         <div id="main" className="max-w-[1500px] w-[1500px]">
             <BigTitle content={{up: "My travel", down: "begins"}}/>
-            <InfoStream pictureContent={pictureContent} pictures={pictures}/>
+            <InfoStream contents={pictureContent}/>
         </div>
       </div>
 
