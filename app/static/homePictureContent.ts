@@ -1,39 +1,59 @@
-import { Content } from "../components/PictureSection"
-
-const homePictureContent: Content = [
-        {
-            heading: "HTML - CSS - Javascript",
-            des: "I started with the base of web development by learning HTML, CSS, and Javascript. I first created a TV web app that purely used such technology, yet, I came across some difficulties associated with the scalability of the application, due to my limited knowledge in scaling and using other types of technology. Nonetheless, this helps me understand the fundamentals of web development, which makes me feel more comfortable taking my skills to the next level."
-        },
-        {
-            heading: "Design Pattern - OOP",
-            des: "I took a course in Design Pattern that made me rethink about code organization using Object Oriented approach to isolate each code module into objects, and each object handles just one task called Single Responsibility Principle. Additionally, the art of using OOP helps me extend the application without having to modify too much on one object (Open-Closed Principle), so I can add more features by literally adding more objects to the app using Design Pattern techniques that I learned from the course. This  brought my knowledge in backend development? to the next level."
-        },
-        {
-            heading: "Tailwind CSS",
-            des: "I used to have separate CSS files attached to corresponding HTML files. When an app got more complex, I was out of control over my styling. In addition, I encountered a problem in which my styling classes overlap over each other, making me feel frustrated to debug. Then, Tailwind CSS came into rescue, providing a way to make a global scope for every CSS class for the entire application."
-        },
-        {
-            heading: "TypeScript",
-            des: "During my time of learning frontend development using Javascript, I found things messed up when dealing with variable types and methods for each object. I did not know what type of variable I was using or what methods a document object had. Typescript had come to the rescue, where I got to learn Typescript to stay more disciplined with the type safe feature that comes with Typescript, making my app more robust and maintainable."
-        },
-        {
-            heading: "Reactjs and Nextjs",
-            des: "As I found it difficult to extend the web frontend using just HTML and Javascript. I learned “React” as a component-based approach to level up my frontend side application. Nextjs is a meta framework that is built on top of React, adding server-side rendering more features to the framework to help developers make fast and robust web applications."
-        },
-        {
-            heading: "Cloud Hosting Provider",
-            des: "Finally, I learned “Docker” to containerize my applications so I can deploy it anywhere and at any time."
-        }
+const homePictureContent = [
+    {
+        "title": "Python library - willphanpy",
+        "tech": ["Python"],
+        "date": ["Jan 2025", "-", "Dec 2025"],
+        "des": ["Built Python library ready for Python developers to work on a full stack project using frameworks such as Django and Machine Learning, helping AI/ML university class projects accomplish 10 times as productive with 30+ reusable Data Structure and Algorithms by using Python technology.    ",
+            "Developed Sport Analytics with 10+ training dataset with 5 times faster using data structure in willphanpy library.",
+            "Developed Misleading Headline Detection 2 times faster using data structure in willphanpy library alongside BERT model.",
+            "Developed License Plate Recognition 10 times faster using algorithm in willphanpy library and YOLO algorithm.",
+            "Developed Agentic Researcher to help draft a research paper with proper citation 10 times faster than handwriting using Google ADK and utilities in willphanpy library."
+        ],
+        picture: "/assets/project/python.png",
+        link: "https://github.com/willphan1712000/project-will-python"
+    },
+    {
+        "title": "@willphan1712000/frontend",
+        "tech": ["React", "Typescript"],
+        "date": ["Jan 2024", "-", "Dec 2025"],
+        "des": [
+            "Built React reusable component library that helps eliminate repeated frontend component development, providing 10+ Frontend reusable components and reducing frontend development 5 times by adding features with component-based architecture patterns with React and Typescript, comprehensive unit tests, and well documented usage."
+        ],
+        picture: "/assets/project/react.png",
+        link: "https://github.com/willphan1712000/project-will-frontend"
+    },
+    {
+        "title": "Digital Business Card",
+        "tech": ["PHP", "CSS", "Typescript", "React", "PHP Doctrine"],
+        "date": ["Dec 2023", "-", "Present"],
+        "des": [
+            "Built a digital business card web application where users can create their own business bio with 50+ various templates by using PHP technology with scalable backend and database with PHP Doctrine, and integrating React front components using Webpack",
+            "Promoted NFC technology for business to effectively introduce themselves towards customers, increasing 50% effectiveness in marketing and reducing 40% paper waste on the environment by sharing information using NFC cards."
+        ],
+        picture: "/assets/project/dbc.png",
+        link: "https://github.com/willphan1712000/project-bio"
+    },
+    {
+        "title": "Content Management System",
+        "tech": ["PHP", "CSS", "MySQL", "Javascript"],
+        "date": ["Jan 2022", "-", "Jun 2023"],
+        "des": [
+            "Developed a system to manage content applications, helping monitor 100+ accounts, 500+ uploaded images on Hosting.com, and subscription date for each of the applications registered with this system by using PHP and MySQL for the backend and HTML5/CSS/Javascript for the frontend."
+        ],
+        picture: "/assets/project/cms.png",
+        link: "https://github.com/willphan1712000/project-content-management"
+    },
+    {
+        "title": "Backend Development",
+        "tech": ["C#", "ASP.NET", "Spring Boot", "OpenAI", "Gemini", "HunggingFace"],
+        "date": ["Jan 2026", "-", "Feb 2026"],
+        "des": [
+            "Developed a full stack system for checkout products using ASP.NET Core and online shopping using Spring Boot, leading to a good performance with less than 120 ms API response and maintainability with dependency injection pattern.",
+            "Integrated AI-driven chatbot, summarizer, and email automation to help boost analysis and performance using OpenAI API, Gemini API, and open-source LLM on HuggingFace."
+        ],
+        picture: "/assets/project/springcsharp.png",
+        link: "https://github.com/willphan1712000/project-ASP.NET"
+    }
 ]
 
-const pictures: string[] = [
-    `/assets/project/1.jpg`,
-    `/assets/project/2.png`,
-    `/assets/project/3.png`,
-    `/assets/project/4.png`,
-    `/assets/project/5.jpg`,
-    `/assets/project/6.jpg`
-]
-
-export {homePictureContent, pictures}
+export default homePictureContent;

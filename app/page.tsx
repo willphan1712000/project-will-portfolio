@@ -2,30 +2,27 @@
 
 import { useEffect } from "react"
 import Intro from "./components/Intro/Intro"
-import PictureSection from "./components/PictureSection"
-import SecondTitle from "./components/SecondTitle"
-import Subbackground from "./components/Subbackground/Subbackground"
-import { homePictureContent, pictures } from "./static/homePictureContent"
-import homepage from "./execute"
-import Project from "./components/Project/Project"
+import InfoStream from "./components/InfoStream/InfoStream"
+import BigTitle from "./components/BigTitle"
+import Greeting from "./components/Greeting/Greeting"
 import home from "./static/home"
+import homePictureContent from "./static/homePictureContent"
 
 export default
  function Home() {
   
   useEffect(() => {
-    homepage()
+    window.scrollTo(0, 0)
   }, [])
 
   return (
     <>
-      <Subbackground />
+      <Greeting />
       <div className="flex justify-center items-center w-full">
-        <div id="main" className="md:!h-[800vh] max-w-[1500px] w-full">
+        <div id="main" className="max-w-[1500px] w-full">
             <Intro />
-            <Project />
-            <SecondTitle content={{up: home.up, down: home.down}}/>
-            <PictureSection pictureContent={homePictureContent} pictures={pictures}/>
+            <BigTitle content={{up: home.up, down: home.down}}/>
+            <InfoStream contents={homePictureContent} />
         </div>
       </div>
     </>

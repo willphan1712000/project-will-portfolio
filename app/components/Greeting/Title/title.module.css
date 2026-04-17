@@ -1,0 +1,38 @@
+.title {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30%;
+    left: 0;
+    overflow: hidden;
+}
+.title h1 {
+    color: #000000;
+    animation: firstText .8s cubic-bezier(0, 0, 0.41, 1.51);
+    animation-fill-mode: both;
+}
+
+@keyframes firstText {
+    from {
+        transform: translate(0px, 40px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.subheadingContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.subheading {
+    width: fit-content;
+}

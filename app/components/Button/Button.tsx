@@ -9,6 +9,7 @@ const Button = ({ link, name }: { link? : string, name? : string }) => {
         hover={true}
         href={link}
         className={styles.btn}
+        target='_blank'
     >{name}</ModernButton>
   )
 }
