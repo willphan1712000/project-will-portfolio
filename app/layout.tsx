@@ -28,7 +28,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const project = database.project
   const social = database.social
 
   return (
@@ -40,7 +39,6 @@ export default async function RootLayout({
         <Script src="https://kit.fontawesome.com/960d33c629.js" crossOrigin="anonymous" />
         
         <AuthProvider data={{
-          project,
           social
         }}>
           {children}
