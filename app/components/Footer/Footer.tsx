@@ -1,13 +1,14 @@
 import { Social } from '@prisma/client'
 import { useSession } from 'next-auth/react'
 import { JSX } from 'react'
-import useMyContext from '../context/Context'
-import EditLink from './EditLink'
-import Logo from './Logo'
-import config from '@/app/static/config';
+import useMyContext from '../../context/Context'
+import EditLink from '../EditLink'
+import Logo from '../Logo'
+import config from '@/app/static/config'
+
+import styles from './Footer.module.css'
 
 const year = new Date().getFullYear()
-
 const icon: Record<string, JSX.Element> = {
   'facebook': <i className="fa-brands fa-facebook"></i>,
   'instagram': <i className="fa-brands fa-instagram"></i>,
@@ -22,13 +23,13 @@ const Footer = () => {
   const { status } = useSession()
 
   return (
-    <div id="footer" className='relative' style={{
+    <div className={styles.footer} style={{
       "--primary-color": config.primaryColor,
       "--second-color": config.secondColor
     } as React.CSSProperties}>
-        <div className="logo"><Logo /></div>
+        <div className={styles.logo}><Logo /></div>
         <h3>Portfolio {year} All rights reserved</h3>
-        <div className={`social`}>
+        <div className={styles.social}>
           {Object.keys(icon).map(item => <EditLink key={item} api={`/api/main/${item}`} edit={status=='authenticated'} name={item} value={social !== null ? social![item as keyof Social]! : ''}><a href={social !== null ? social![item as keyof Social]! : ''} target="_blank">{icon[item]}</a></EditLink>)}
         </div>
     </div>

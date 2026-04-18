@@ -35,11 +35,8 @@ const Navbar = () => {
       const pageHeight = document.documentElement.scrollTop // How far the view has traveled
       const dy = pageHeight - currentScroll
 
-      if(dy > 0) {
-        navBar.style.transform = 'translate(0px, -5rem)'
-      } else {
-        navBar.style.transform = 'translate(0px, 0px)'
-      }
+      if(dy > 0) navBar.style.transform = 'translate(0px, -5rem)'
+      else navBar.style.transform = 'translate(0px, 0px)'
 
       currentScroll = pageHeight
       
@@ -47,7 +44,7 @@ const Navbar = () => {
   }, [])
   
   return (
-    <div id="nav-bar" className='fixed top-0 md:relative flex flex-col md:flex-row items-center justify-center p-[5px] z-[3] w-full h-20 transition-all bg-transparent'>
+    <div id="nav-bar" className='md:relative fixed top-0 flex flex-col md:flex-row items-center justify-center p-[5px] z-[3] w-full h-20 transition-all bg-transparent bg-white'>
         <div className="nav-bar__logo mr-[40px] hidden md:flex">
             <Logo />
         </div>

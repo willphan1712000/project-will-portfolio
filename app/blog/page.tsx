@@ -1,7 +1,7 @@
 'use client'
 
 import InfoStream from "../components/InfoStream/InfoStream"
-import BigTitle from "../components/BigTitle"
+import BigTitle from "../components/BigTitle/BigTitle"
 import Subbackground from "../components/Greeting/Greeting"
 import pictureContent from "./pictureContent";
 
