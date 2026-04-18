@@ -2,10 +2,8 @@ import "@willphan1712000/w/dist/index.css";
 import type { Metadata } from "next";
 import Script from "next/script";
 import AuthProvider from "./auth/AuthProvider";
-import "./css/homepage.css";
 import "./css/universal.css";
 import "./globals.css";
-import prisma from "@/prisma/client";
 import database from "./static/database";
 
 // const geistSans = Geist({
