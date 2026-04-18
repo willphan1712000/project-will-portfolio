@@ -35,7 +35,7 @@
 
 .heading {
     font-size: 2rem;
-    padding: 0 1rem;
+    padding: 0px 30px;
 }
 .des {
     font-size: 20px;
@@ -45,5 +45,11 @@
 @media (min-width: 1024px) {
     .introduction {
         flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    .img {
+        padding: 1rem;
     }
 }
