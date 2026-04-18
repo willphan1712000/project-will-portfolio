@@ -17,7 +17,7 @@ const Greeting = () => {
       if(!intro || !intro.current) return;
       intro.current.scrollIntoView({ behavior: "smooth" })
     })
-  }, [])
+  }, [intro])
 
   return (
     <div className={styles.subbackgroundContainer} style={{'--max-width': config.maxWidth} as React.CSSProperties}>
