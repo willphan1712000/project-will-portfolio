@@ -3,7 +3,7 @@
 import { useEffect } from "react"
 import Intro from "./components/Intro/Intro"
 import InfoStream from "./components/InfoStream/InfoStream"
-import BigTitle from "./components/BigTitle"
+import BigTitle from "./components/BigTitle/BigTitle"
 import Greeting from "./components/Greeting/Greeting"
 import home from "./static/home"
 import homePictureContent from "./static/homePictureContent"
@@ -19,7 +19,7 @@ export default
     <>
       <Greeting />
       <div className="flex justify-center items-center w-full">
-        <div id="main" className="max-w-[1500px] w-full">
+        <div id="main" className="max-w-[1500px] w-full h-auto">
             <Intro />
             <BigTitle content={{up: home.up, down: home.down}}/>
             <InfoStream contents={homePictureContent} />

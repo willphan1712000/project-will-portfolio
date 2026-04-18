@@ -1,11 +1,11 @@
 import { ModernButton } from '@willphan1712000/frontend'
 import { CiCalendarDate } from "react-icons/ci";
+import Button from '../Button/Button';
+import { Content } from './InfoStream';
 
 import styles from './InfoStream.module.css'
 
 import config from '@/app/static/config'
-import { Content } from './InfoStream';
-import Button from '../Button/Button';
 
 const InfoCard = ({ item }: { item: Content }) => {
   return (

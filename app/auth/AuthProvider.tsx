@@ -5,8 +5,8 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { SessionProvider } from 'next-auth/react';
 import { ReactNode } from 'react';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import Footer from '../components/Footer/Footer';
+import Navbar from '../components/NavBar/Navbar';
 import { Data, MyContext } from '../context/Context';
 
 const AuthProvider = ({children, data} : {
