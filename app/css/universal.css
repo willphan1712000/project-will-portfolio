@@ -39,6 +39,8 @@ html {
 }
 body {
    background-color: var(--main-color);
+   z-index: 0;
+   overflow-x: hidden;
 }
 .colorConceptActive {
    background-color: var(--main-color);

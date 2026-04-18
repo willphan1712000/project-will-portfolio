@@ -19,7 +19,7 @@ export default
     <>
       <Greeting />
       <div className="flex justify-center items-center w-full">
-        <div id="main" className="max-w-[1500px] w-full">
+        <div id="main" className="max-w-[1500px] w-full h-auto">
             <Intro />
             <BigTitle content={{up: home.up, down: home.down}}/>
             <InfoStream contents={homePictureContent} />
