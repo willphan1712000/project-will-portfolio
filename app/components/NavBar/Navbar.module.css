@@ -82,8 +82,7 @@
 
 /* hover: state */
 .element:hover {
-  background-color: black;
-  color: white;
+  background-color: #ebebeb;
 }
 
 /* md: breakpoint */
