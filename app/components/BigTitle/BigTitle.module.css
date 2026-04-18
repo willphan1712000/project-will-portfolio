@@ -1,0 +1,17 @@
+.bigTitle {
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bigTitle > .up {
+    position: relative;
+    left: -50vw;
+}
+.bigTitle > .down {
+    position: relative;
+    right: -50vw;
+}

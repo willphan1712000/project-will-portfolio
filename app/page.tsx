@@ -3,7 +3,7 @@
 import { useEffect } from "react"
 import Intro from "./components/Intro/Intro"
 import InfoStream from "./components/InfoStream/InfoStream"
-import BigTitle from "./components/BigTitle"
+import BigTitle from "./components/BigTitle/BigTitle"
 import Greeting from "./components/Greeting/Greeting"
 import home from "./static/home"
 import homePictureContent from "./static/homePictureContent"

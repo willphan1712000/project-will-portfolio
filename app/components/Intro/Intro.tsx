@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import home from '../../static/home'
-import styles from './intro.module.css'
 import config from '@/app/static/config'
+
+import styles from './intro.module.css'
 
 const Intro = () => {
   return (
@@ -10,7 +11,7 @@ const Intro = () => {
             "--primary-color": config.primaryColor,
             "--second-color": config.secondColor
         } as React.CSSProperties}>
-        <div className='bg-white lg:flex-row flex-col' id="introduction">
+        <div className={styles.introduction}>
           <div className="img md:p-[1rem]"><Image draggable="false" src={'/assets/self1.JPEG'} alt="will_intro" width="300" height="200"/></div>
           <div className={styles.text}>
               <div className={styles.heading}>{home.intro}</div>
