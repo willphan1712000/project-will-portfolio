@@ -12,7 +12,7 @@ const Intro = () => {
             "--second-color": config.secondColor
         } as React.CSSProperties}>
         <div className={styles.introduction}>
-          <div className="img md:p-[1rem]"><Image draggable="false" src={'/assets/self1.JPEG'} alt="will_intro" width="300" height="200"/></div>
+          <div className={styles.img}><Image draggable="false" src={'/assets/self1.JPEG'} alt="will_intro" width="300" height="200"/></div>
           <div className={styles.text}>
               <div className={styles.heading}>{home.intro}</div>
               <div className={styles.des}>{home.des}</div>
