@@ -27,12 +27,8 @@ const BigTitle = ({ content }: Props) => {
 
         if(init_scroll + height >= bigTitle.current.offsetTop) {
           transform += scroll - init_scroll
-          if (up.current) {
-            up.current.style.transform = `translateX(${transform * 0.9}px)`
-          }
-          if (down.current) {
-            down.current.style.transform = `translateX(${-transform * 0.9}px)`
-          }
+          if (up.current) up.current.style.transform = `translateX(${transform * 0.9}px)`
+          if (down.current) down.current.style.transform = `translateX(${-transform * 0.9}px)`
         }
 
         init_scroll = scroll;
@@ -43,8 +39,8 @@ const BigTitle = ({ content }: Props) => {
 
   return (
     <div className={styles.bigTitle} ref={bigTitle}>
-        <div className="up" ref={up}>{content.up}</div>
-        <div className="down" ref={down}>{content.down}</div>
+        <div className={styles.up} ref={up}>{content.up}</div>
+        <div className={styles.down} ref={down}>{content.down}</div>
     </div>
   )
 }

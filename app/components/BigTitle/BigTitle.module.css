@@ -7,11 +7,11 @@
     overflow: hidden;
 }
 
-.bigTitle > .up {
+.up {
     position: relative;
     left: -50vw;
 }
-.bigTitle > .down {
+.down {
     position: relative;
     right: -50vw;
 }
