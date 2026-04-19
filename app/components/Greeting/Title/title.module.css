@@ -1,14 +1,10 @@
 .title {
-    width: 60%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     position: -webkit-sticky;
     position: sticky;
-    top: 30%;
-    left: 0;
-    overflow: hidden;
 }
 .title h1 {
     color: #000000;
@@ -35,4 +31,10 @@
 
 .subheading {
     width: fit-content;
+}
+
+@media (max-width: 640px) {
+    .title {
+        position: relative;
+    }    
 }

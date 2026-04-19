@@ -10,16 +10,9 @@ export default function Blog() {
   return (
     <>
       <Greeting />
-      <div className="flex justify-center items-center w-full">
-        <div id="main" className="max-w-[1500px] w-[1500px] h-auto">
-            <BigTitle content={{up: "My travel", down: "begins"}}/>
-            <InfoStream contents={pictureContent}/>
-        </div>
-      </div>
-
-      <div className="flex justify-center items-center">
-        <Card />
-      </div>
+      <BigTitle content={{up: "My travel", down: "begins"}}/>
+      <InfoStream contents={pictureContent}/>
+      <Card />
     </>
   );
 }

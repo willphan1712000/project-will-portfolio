@@ -41,17 +41,19 @@ const InfoStream = ({ contents }: { contents: Content[] }) => {
   }, [])
   
   return (
-    <div className={styles.infoStream} ref={infoStreamRef}>
-        <div className={styles.infoCardContainer}>
-          {contents.map((item, index) => (
-              <InfoCard key={index} item={item} />
-          ))}
-        </div>
-        <div className={styles.infoPictureContainer}>
-          {contents.map((item, index) => (
-            <InfoPicture key={index} src={item.picture} isActive={index === isActive} />
-          ))}
-        </div>
+    <div className={styles.container}>
+      <div className={styles.infoStream} ref={infoStreamRef}>
+          <div className={styles.infoCardContainer}>
+            {contents.map((item, index) => (
+                <InfoCard key={index} item={item} />
+            ))}
+          </div>
+          <div className={styles.infoPictureContainer}>
+            {contents.map((item, index) => (
+              <InfoPicture key={index} src={item.picture} isActive={index === isActive} />
+            ))}
+          </div>
+      </div>
     </div>
   )
 }
