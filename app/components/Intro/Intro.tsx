@@ -1,10 +1,9 @@
-import Image from 'next/image'
-import home from '../../static/home'
 import config from '@/app/static/config'
+import home from '../../static/home'
 
-import styles from './intro.module.css'
-import { useEffect, useRef } from 'react'
 import { useStore } from '@/app/components/Store'
+import { useEffect, useRef } from 'react'
+import styles from './intro.module.css'
 
 const Intro = () => {
   const intro = useRef<HTMLDivElement>(null)

@@ -12,9 +12,7 @@ export default function Blog() {
       <Greeting />
       <BigTitle content={{up: "My travel", down: "begins"}}/>
       <InfoStream contents={pictureContent}/>
-      <div className="flex justify-center items-center">
-        <Card />
-      </div>
+      <Card />
     </>
   );
 }
