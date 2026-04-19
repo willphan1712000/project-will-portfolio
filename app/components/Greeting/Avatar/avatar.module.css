@@ -1,12 +1,16 @@
 .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 400px;
-  height: 400px;
+  aspect-ratio: 1;
   display: inline-block;
   border-radius: 50%;
   border: 8px solid rgba(255, 255, 255, 0.8); /* Semi-transparent thick border */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
   overflow: hidden;
+  animation: fadeIn 1s ease-in-out 1s both;
 }
 
 .avatar img {
@@ -21,18 +25,6 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.background {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: flex-end;
-    padding: 30px;
-    animation: fadeIn 1s ease-in-out 1s both;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -42,14 +34,16 @@
     }
 }
 
-.background img {
+.avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-@media (min-width: 1200px) {
-  .background {
-    padding: 180px 360px;
-  }
+@media (max-width: 640px) {
+    .avatar {
+      width: 100%;
+      position: relative;
+      margin: 0;
+    }
 }

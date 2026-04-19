@@ -30,12 +30,8 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className="mt-20 md:mt-0"
-      >
+      <body>
         <Script src="https://kit.fontawesome.com/960d33c629.js" crossOrigin="anonymous" />
-        
         <AuthProvider data={{
           social
         }}>

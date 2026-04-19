@@ -1,11 +1,11 @@
-.subbackgroundContainer {
-    padding: 30px;
+.container {
+    margin: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.subbackgroundWrapper {
+.wrapper {
     width: 100%;
     max-width: var(--max-width);
     padding: 2px;
@@ -14,21 +14,22 @@
     z-index: 1;
 }
 
-.subbackground {
+.background {
     background-image: 
       radial-gradient(circle at top left, var(--primary-color) 0%, transparent 40%),
       radial-gradient(circle at bottom right, var(--second-color) 0%, transparent 40%);
-    min-height: 100vh;
     width: 100%;
     position: relative;
     background-color: #fff4ff;
     border-radius: 40px;
-    padding-bottom: 15%;
     z-index: 2;
-    padding: 100px;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.subbackgroundWrapper::after {
+.wrapper::after {
     border-radius: inherit;
     content: "";
     background: linear-gradient(90deg, var(--primary-color) 0.000%, var(--second-color) 100.000%);
@@ -39,9 +40,19 @@
     transition: all .2s ease-in-out;
 }
 
-.subbackgroundWrapper:hover::after {
+.wrapper:hover::after {
     filter: blur(30px);
     opacity: 1;
+}
+
+.titleAvatar {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
 }
 
 .subbackground__goToNext {
@@ -67,14 +78,8 @@
     height: 100%;
 }
 
-@media (min-width: 1200px) {
-    .subbackground {
-        padding: 180px 360px;
-    }
-}
-
-@media (min-width: 768px) {
-    .subbackground {
-        height: 100vh !important;
+@media (max-width: 640px) {
+    .titleAvatar {
+        flex-direction: column-reverse;
     }
 }
