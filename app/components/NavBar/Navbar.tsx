@@ -1,10 +1,7 @@
 'use client'
 
-import { useSession } from 'next-auth/react'
-import Image from 'next/image'
-import Link from 'next/link'
 import { useEffect, useRef } from 'react'
-import { VscSignIn } from 'react-icons/vsc'
+import Link from 'next/link'
 import Logo from '../Logo'
 import styles from './Navbar.module.css'
 import { usePathname } from 'next/navigation'
@@ -18,8 +15,6 @@ const href: Record<string, string> = {
 
 const Navbar = () => {
   const navBar = useRef<HTMLDivElement>(null);
-
-  const { status, data: session } = useSession()
   const pathName = usePathname()
 
   useEffect(() => {
