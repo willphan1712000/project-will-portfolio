@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
 import Github from './_components/Github'
 import Navigators from './_components/Navigators'
 import Services from './_components/Services'
@@ -8,24 +7,9 @@ import Skills from './_components/Skills'
 import Title from './_components/Title'
 
 const W = () => {
-  const outer = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    // inner.current?.addEventListener('click', e => {
-    //   console.log("inner")
-    // }, {
-    //   capture: false
-    // })
-    outer.current?.addEventListener('click', () => {
-      console.log("outer")
-    }, {
-      capture: false
-    })
-  }, [])
-
   return (
     <>
-      <Title />
+      <Title title='Full Stack Development'/>
       <Github />
       <Skills />
       <Services />

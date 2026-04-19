@@ -14,7 +14,7 @@ const Intro = () => {
   }, [])
 
   return (
-    <div className='p-[30px]' ref={intro}>
+    <div ref={intro} className={styles.wrapper}>
       <div className={styles.border} style={{
             "--primary-color": config.primaryColor,
             "--second-color": config.secondColor

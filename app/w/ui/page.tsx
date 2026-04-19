@@ -1,6 +1,6 @@
 'use client'
 
-import styles from '../_components/style.module.css'
+import Title from '../_components/Title'
 import ColorPickerSliderComponent from './_components/ColorPickerSliderComponent'
 import OptionSliderComponent from './_components/OptionSliderComponent'
 import RangeSliderComponent from './_components/RangeSliderComponent'
@@ -11,7 +11,7 @@ const UI = () => {
   return (
     <div className='flex gap-2 w-full flex-row'>
       <div className='lg:w-[80%] w-full'>
-        <h1 className={styles.text}>UI Components</h1>
+        <Title title='UI Components'/>
         <SelectComponent />
         <RangeSliderComponent />
         <ColorPickerSliderComponent />

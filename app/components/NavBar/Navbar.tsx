@@ -49,15 +49,6 @@ const Navbar = () => {
               {Object.keys(href).map(key => <li key={key}><Link href={href[key]}><span className={styles.element} style={pathName === href[key] ? { background: 'black', color: 'white' } : {}}>{key}</span></Link></li>)}
             </ul>
         </div>
-        <div className='flex flex-row justify-center items-center gap-2'>
-          { status === 'authenticated' && (
-            <>
-              <Image src={ session.user?.image! } alt='' width="25" height="25" className='rounded-full'/>
-              <p>{session.user?.name}</p>
-              <Link className='cursor-pointer' href={'/api/auth/signout'}><VscSignIn size={20} /></Link>
-            </>
-        )}
-        </div>
       </div>
     </div>
   )
