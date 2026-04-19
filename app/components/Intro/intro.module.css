@@ -1,18 +1,23 @@
 .wrapper {
-    margin: 0px 30px;
+    margin: 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .introduction {
     display: flex;
-    padding: 0;
+    padding: 30px;
     border-radius: 40px;
     background-color: white;
     flex-direction: column;
+    gap: 0;
+    width: 100%;
+    max-width: 1500px;
 }
 
 .visual {
     flex: 1;
-    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,19 +46,17 @@
 .text {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex: 1;
 }
 
 .heading {
     font-size: 2rem;
-    padding: 0px 30px;
+    padding: 20px 0px;
 }
 .des {
     font-size: 20px;
-    padding: 30px;
 }
 
 @media (min-width: 1024px) {
@@ -63,6 +66,14 @@
 }
 
 @media (min-width: 768px) {
+    .wrapper {
+        margin: 0px 30px;
+    }
+
+    .introduction {
+        gap: 50px;
+    }
+    
     .img {
         padding: 1rem;
     }
