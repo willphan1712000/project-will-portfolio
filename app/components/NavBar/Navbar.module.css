@@ -14,18 +14,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    background-color: #ffffff;   
+    padding: 10px;
+    background-color: #ffffff;
     border-radius: 40px;
     width: fit-content;
+    height: fit-content;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-@media (min-width: 768px) {
-    .navBar {
-        position: relative;
-        flex-direction: row;
-    }
+    position: relative;
+    flex-direction: row;
 }
 
 .navBarLogo {
@@ -56,40 +52,25 @@
     gap: 5px;
 }
 
+.element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.element:hover {
+    background-color: #ebebeb;
+}
+
 @media (min-width: 768px) {
     .navBarLogo {
         display: flex;
     }
-}
-
-.element {
-  /* Flexbox Layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem; /* Equivalent to gap-2 (usually 8px) */
-
-  /* Spacing & Typography */
-  padding: 10px; /* Combines py-[10px] and px-[10px] */
-  font-size: 1rem; /* text-[1rem] */
-  
-  /* Visuals */
-  border-radius: 40px; /* rounded-[10px] */
-  background-color: transparent; /* Default state */
-  transition: background-color 0.2s ease-in-out; /* Added for a smooth hover effect */
-}
-
-/* hover: state */
-.element:hover {
-  background-color: #ebebeb;
-}
-
-/* md: breakpoint */
-@media (min-width: 768px) {
-  .element {
-    padding-left: 20px; /* md:px-[20px] */
-    padding-right: 20px;
-    font-size: 1.25rem; /* md:text-[1.25rem] */
-  }
 }
