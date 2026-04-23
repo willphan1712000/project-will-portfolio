@@ -1,4 +1,7 @@
+import getGoogleImage from "../utilities/getGoogleImage";
+
 export default Object.freeze({
+    avatar: getGoogleImage("12z_7SJj3WX5unECGGMjOOOrCe2hP2ERf"),
     subheading: ["Bachelor of Science in Computer Science", "Software Engineering"],
     heading: "Will Phan",
     titles: ["Fullstack", "DevOps", "AI/ML"],
