@@ -33,8 +33,23 @@
     width: fit-content;
 }
 
+.heading {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, var(--second-color), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
 @media (max-width: 640px) {
     .title {
         position: relative;
-    }    
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
 }

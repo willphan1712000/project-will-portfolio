@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -14,6 +16,15 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+* {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
 }
 
 /* body {
