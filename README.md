@@ -2,7 +2,7 @@
 
 A personal portfolio and interactive library website built using Next.js, TypeScript, and Prisma. This project showcases professional experience, tech skills, personal blogs, and travel experiences.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Framework:** [Next.js](https://nextjs.org/) (App Router)
 - **Language:** [TypeScript](https://www.typescriptlang.org/)
@@ -14,7 +14,7 @@ A personal portfolio and interactive library website built using Next.js, TypeSc
 - **Icons:** [FontAwesome](https://fontawesome.com/), [React Icons](https://react-icons.github.io/react-icons/)
 - **Libraries:** `@willphan1712000/frontend`, `@willphan1712000/w`, `Axios`, `PrismJS` (for code highlighting)
 
-## 📁 Project Structure
+## Project Structure
 
 - `app/`: Main application logic using Next.js App Router.
   - `api/`: Backend API routes for authentication, main data, and avatar uploads.
@@ -59,20 +59,20 @@ A gallery of travel experiences organized by location (GA, IL, NC, TN).
 ### Avatar Upload
 A feature for uploading files directly to Vercel Blob via `/api/avatar/upload`.
 
-## 🛠 Database Schema
+## Database Schema
 
 The Prisma schema includes standard NextAuth models (`User`, `Account`, `Session`, `VerificationToken`, `Authenticator`) and custom portfolio models:
 - **Social:** Stores social media links (Facebook, Instagram, GitHub, LinkedIn, YouTube, Resume).
 - **Project:** Stores project details (ID, Email, Name, URL).
 
-## 🔧 Scripts
+## Scripts
 
 - `npm run dev`: Starts the development server.
 - `npm run build`: Builds the application for production.
 - `npm run start`: Starts the production server.
 - `npm run lint`: Runs ESLint for code quality.
 
-## 📝 Configuration
+## Configuration
 
 - `next.config.ts`: Next.js specific configuration.
 - `tailwind.config.ts`: Tailwind CSS theme and plugin setup.
