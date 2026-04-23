@@ -1,3 +1,5 @@
+import getGoogleImage from "../utilities/getGoogleImage";
+
 const homePictureContent = [
     {
         "title": "Python library - willphanpy",
@@ -9,7 +11,7 @@ const homePictureContent = [
             "Developed License Plate Recognition 10 times faster using algorithm in willphanpy library and YOLO algorithm.",
             "Developed Agentic Researcher to help draft a research paper with proper citation 10 times faster than handwriting using Google ADK and utilities in willphanpy library."
         ],
-        picture: "/assets/project/python.png",
+        picture: getGoogleImage("1KdoYSSrOHN6Qal4I1Tg01K2t-_84wjz-"),
         link: "https://github.com/willphan1712000/project-will-python"
     },
     {
@@ -19,7 +21,7 @@ const homePictureContent = [
         "des": [
             "Built React reusable component library that helps eliminate repeated frontend component development, providing 10+ Frontend reusable components and reducing frontend development 5 times by adding features with component-based architecture patterns with React and Typescript, comprehensive unit tests, and well documented usage."
         ],
-        picture: "/assets/project/react.png",
+        picture: getGoogleImage("1xeQveNOYtYigD45EmbWsp1R1FsUCG3aK"),
         link: "https://github.com/willphan1712000/project-will-frontend"
     },
     {
@@ -30,7 +32,7 @@ const homePictureContent = [
             "Built a digital business card web application where users can create their own business bio with 50+ various templates by using PHP technology with scalable backend and database with PHP Doctrine, and integrating React front components using Webpack",
             "Promoted NFC technology for business to effectively introduce themselves towards customers, increasing 50% effectiveness in marketing and reducing 40% paper waste on the environment by sharing information using NFC cards."
         ],
-        picture: "/assets/project/dbc.png",
+        picture: getGoogleImage("1jaMifs2r1pUAknQywYxi5idGfxr29t6j"),
         link: "https://github.com/willphan1712000/project-bio"
     },
     {
@@ -40,7 +42,7 @@ const homePictureContent = [
         "des": [
             "Developed a system to manage content applications, helping monitor 100+ accounts, 500+ uploaded images on Hosting.com, and subscription date for each of the applications registered with this system by using PHP and MySQL for the backend and HTML5/CSS/Javascript for the frontend."
         ],
-        picture: "/assets/project/cms.png",
+        picture: getGoogleImage("1T5tgfwNdR3hLfeEKNgef1WuLwqcyIqyv"),
         link: "https://github.com/willphan1712000/project-content-management"
     },
     {
@@ -51,7 +53,7 @@ const homePictureContent = [
             "Developed a full stack system for checkout products using ASP.NET Core and online shopping using Spring Boot, leading to a good performance with less than 120 ms API response and maintainability with dependency injection pattern.",
             "Integrated AI-driven chatbot, summarizer, and email automation to help boost analysis and performance using OpenAI API, Gemini API, and open-source LLM on HuggingFace."
         ],
-        picture: "/assets/project/springcsharp.png",
+        picture: getGoogleImage("1ix22KV7BA7wDvAYE7rHpg3oKXuWlxZC8"),
         link: "https://github.com/willphan1712000/project-ASP.NET"
     }
 ]

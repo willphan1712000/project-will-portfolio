@@ -14,7 +14,7 @@ const Title = () => {
           ))}
         </div>
         <h1 className={styles.heading}>{home.heading}</h1>
-        <div className='pl-5'>
+        <div>
             {home.titles.map((title, index) => (
                 <h1 key={index} className='text-[1rem] md:text-[1.5rem] text-black'>
                   <TypeAnimation 
