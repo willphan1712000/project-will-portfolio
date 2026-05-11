@@ -113,7 +113,6 @@ const TechStack = () => {
                 first={config.primaryColor}
                 aria-hidden={index >= techStacks.length}
                 className={styles.item}
-                hover={true}
                 shadow={true}
             >
                 <Icon className={styles.icon} aria-hidden="true" />

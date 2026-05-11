@@ -7,7 +7,7 @@ import BigTitle from "./components/BigTitle/BigTitle"
 import Greeting from "./components/Greeting/Greeting"
 import home from "./static/home"
 import homePictureContent from "./static/homePictureContent"
-import TechStack from "./components/techStack/TechStack";
+import TechStack from "./components/TechStack/TechStack";
 
 export default
  function Home() {
