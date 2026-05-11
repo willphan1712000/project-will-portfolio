@@ -17,8 +17,7 @@ const BigTitle = ({ content }: Props) => {
   useEffect(() => {
     let init_scroll = document.documentElement.scrollTop
     let transform = 0
-    
-    document.addEventListener("scroll", handler)
+
     function handler() {
         const { scroll, width, height } = getScrollVar()
 
@@ -33,6 +32,8 @@ const BigTitle = ({ content }: Props) => {
 
         init_scroll = scroll;
     }
+
+    document.addEventListener("scroll", handler, { passive: true })
 
     return () => document.removeEventListener("scroll", handler)
   }, [])
