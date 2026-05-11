@@ -23,8 +23,6 @@ const InfoStream = ({ contents }: { contents: Content[] }) => {
     const infoStream = infoStreamRef.current;
     let init_scroll = document.documentElement.scrollTop
 
-    document.addEventListener("scroll", handler)
-    
     function handler() {
       const { scroll, width, height } = getScrollVar()
       
@@ -36,6 +34,8 @@ const InfoStream = ({ contents }: { contents: Content[] }) => {
 
       init_scroll = scroll;
     }
+
+    document.addEventListener("scroll", handler, { passive: true })
 
     return () => document.removeEventListener("scroll", handler)
   }, [])

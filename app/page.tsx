@@ -7,6 +7,7 @@ import BigTitle from "./components/BigTitle/BigTitle"
 import Greeting from "./components/Greeting/Greeting"
 import home from "./static/home"
 import homePictureContent from "./static/homePictureContent"
+import TechStack from "./components/techStack/TechStack";
 
 export default
  function Home() {
@@ -20,6 +21,7 @@ export default
       <Greeting />
       <Intro />
       <BigTitle content={{up: home.up, down: home.down}}/>
+      <TechStack />
       <InfoStream contents={homePictureContent} />
     </>
   );

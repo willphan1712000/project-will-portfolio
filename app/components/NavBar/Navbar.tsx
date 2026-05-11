@@ -18,8 +18,9 @@ const Navbar = () => {
   const pathName = usePathname()
 
   useEffect(() => {
-    let currentScroll: number
-    window.addEventListener('scroll', function() {
+    let currentScroll = document.documentElement.scrollTop
+
+    function handler() {
       if(!navBar.current) return;
 
       const pageHeight = document.documentElement.scrollTop // How far the view has traveled
@@ -29,8 +30,11 @@ const Navbar = () => {
       else navBar.current.style.transform = 'translate(0px, 0px)'
 
       currentScroll = pageHeight
-      
-  });
+    }
+
+    window.addEventListener('scroll', handler, { passive: true })
+
+    return () => window.removeEventListener('scroll', handler)
   }, [])
   
   return (
