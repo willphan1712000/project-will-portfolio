@@ -28,8 +28,13 @@ const pictureContent = [
         },
         {
             title: "Move to Georgia - December 2021",
-            des: ["Finally, I transferred from Angelo State University in Texas to Kennesaw State University in Georgia. My journey continues here."],
+            des: ["Finally, I transferred from Angelo State University in Texas to Kennesaw State University in Georgia, where my journey continued."],
             picture: getGoogleImage("1LZNVFraI5x3WnCqXc39SbIrVUFergD2B")
+        },
+        {
+            title: "Graduation - May 2026",
+            des: ["Graduation from Kennesaw State University with Bachelor of Science in Computer Science with Math minor and AI concentration. Give a big thank to those who always support me, those who leave me, and those who let me do what works best for me.", "During my time in here, I've met wonderful friends who were on school projects with me and helped each other to complete our goals.", "I was also hired as an IT student assistant helping students, faculty members, and staff with technical issues such as wifi, two-factor authentication, password, software installation. What I have found meaningful is that when I help a customer with technical issue, they are then able to complete their work. They thank me for helping them resolve problems and I feel fulfulled in my heart."],
+            picture: getGoogleImage("1_X7xrh2Es0nXfobJr78MWeZixpiq3jG_")
         }
 ]
 
