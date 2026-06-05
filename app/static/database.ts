@@ -9,6 +9,7 @@ export default Object.freeze({
         linkedin: "https://www.linkedin.com/in/thanh-nha-phan-53715313a/",
         youtube: "https://www.youtube.com/@nhaphan5748",
         github: "https://github.com/willphan1712000",
-        resume: "https://drive.google.com/open?id=1jWQr8gc_S_VDfwzZ_2uoDnznIPo36TkZ&usp=drive_fs"
+        resume: "https://drive.google.com/open?id=1jWQr8gc_S_VDfwzZ_2uoDnznIPo36TkZ&usp=drive_fs",
+        diploma: "https://www.parchment.com/lp/award/047e1d4b-183f-4f4a-bbf4-c95d392334f1"
     }
 })

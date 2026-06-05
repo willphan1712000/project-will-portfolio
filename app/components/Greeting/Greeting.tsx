@@ -1,11 +1,9 @@
-import React, { useEffect, useRef } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import Title from './Title/Title'
-import Avatar from './Avatar/Avatar'
-import config from '@/app/static/config'
-import styles from './Greeting.module.css'
-import { useStore } from '@/app/components/Store'
+import { useStore } from '@/app/components/Store';
+import config from '@/app/static/config';
+import React, { useEffect, useRef } from 'react';
+import Avatar from './Avatar/Avatar';
+import styles from './Greeting.module.css';
+import Title from './Title/Title';
 
 const Greeting = () => {
   const goToNextPageRef = useRef<HTMLDivElement>(null);
@@ -34,9 +32,6 @@ const Greeting = () => {
             <Avatar />
           </div>
         </div>
-        {/* <div ref={goToNextPageRef} className={styles.subbackground__goToNext} title='Jump to next page' tabIndex={0}>
-          <FontAwesomeIcon icon={faArrowDown} />
-        </div> */}
       </div>
     </div>
   )
