@@ -4,14 +4,14 @@ import home from '@/app/static/home';
 import { ModernButton } from '@willphan1712000/frontend';
 import { TypeAnimation } from 'react-type-animation';
 import styles from './title.module.css';
+import database from '@/app/static/database';
 
 const Title = () => {
   return (
     <div className={styles.title}>
         <div className={styles.subheadingContainer}>
-          {home.subheading.map(sub => (
-            <ModernButton key={sub} first={config.thirdColor} className={styles.subheading}>{sub}</ModernButton>
-          ))}
+          <ModernButton first={config.thirdColor} className={styles.subheading} hover={true} href={database.social.diploma} target='_blank'>Bachelor of Science in Computer Science</ModernButton>
+          <ModernButton first={config.thirdColor} className={styles.subheading}>Software Engineering</ModernButton>
         </div>
         <h1 className={styles.heading}>{home.heading}</h1>
         <div>
