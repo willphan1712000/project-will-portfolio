@@ -11,7 +11,6 @@ const Title = () => {
     <div className={styles.title}>
         <div className={styles.subheadingContainer}>
           <ModernButton first={config.thirdColor} className={styles.subheading} hover={true} href={database.social.diploma} target='_blank'>Bachelor of Science in Computer Science</ModernButton>
-          <ModernButton first={config.thirdColor} className={styles.subheading}>Software Engineering</ModernButton>
         </div>
         <h1 className={styles.heading}>{home.heading}</h1>
         <div>
