@@ -2,6 +2,8 @@
 
 import Title from '../_components/Title'
 import ColorPickerSliderComponent from './_components/ColorPickerSliderComponent'
+import DynamicListComponent from './_components/DynamicListComponent'
+import InputGoogleComponent from './_components/InputGoogleComponent'
 import OptionSliderComponent from './_components/OptionSliderComponent'
 import RangeSliderComponent from './_components/RangeSliderComponent'
 import SelectComponent from './_components/SelectComponent'
@@ -16,6 +18,8 @@ const UI = () => {
         <RangeSliderComponent />
         <ColorPickerSliderComponent />
         <OptionSliderComponent />
+        <InputGoogleComponent />
+        <DynamicListComponent />
       </div>
       <div className='hidden w-[20%] lg:block'>
         <TableOfContents />

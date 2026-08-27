@@ -1,5 +1,5 @@
-import { $$ } from '@willphan1712000/w'
-import { useEffect, useRef, useState } from 'react'
+import { tools } from '@willphan1712000/frontend'
+import { useState } from 'react'
 import { FaCheck } from 'react-icons/fa'
 
 const github = 'https://github.com/willphan1712000/project-will-frontend'
@@ -7,26 +7,28 @@ const githubClone = 'git clone https://github.com/willphan1712000/project-will-f
 const npm = 'npm i @willphan1712000/frontend'
 
 const Github = () => {
-    const copybtn = useRef<HTMLSpanElement>(null)
-    const npmRef = useRef<HTMLSpanElement>(null)
     const [copied, setCopy] = useState<boolean>(false)
     const [npmCopied, setNpmCopied] = useState<boolean>(false)
 
-    useEffect(() => {
-        $$(githubClone, copybtn.current).copyToClipboard().run(() => {
+    const handleCopyClone = async () => {
+        const success = await tools.copyToClipboard(githubClone)
+        if (success) {
             setCopy(true)
             setTimeout(() => {
                 setCopy(false)
             }, 1500)
-        })
+        }
+    }
 
-        $$(npm, npmRef.current).copyToClipboard().run(() => {
-          setNpmCopied(true)
-          setTimeout(() => {
-            setNpmCopied(false)
-          }, 1500)
-        })
-    })
+    const handleCopyNpm = async () => {
+        const success = await tools.copyToClipboard(npm)
+        if (success) {
+            setNpmCopied(true)
+            setTimeout(() => {
+                setNpmCopied(false)
+            }, 1500)
+        }
+    }
 
   return (
     <div className='w-full flex justify-center items-center flex-col my-10'>
@@ -38,12 +40,12 @@ const Github = () => {
         <div className='relative px-10 py-3 border-white border-[2px] rounded-2xl bg-[--dark-color]'>
           <span className='absolute top-[-1rem] left-[5%] bg-inherit p-1'>Github Clone</span>
           <div>{githubClone}</div>
-          <span ref={copybtn} className='absolute top-[-1rem] right-[5%] bg-inherit p-1 cursor-pointer flex flex-row gap-1 justify-center items-center'>{copied && <FaCheck />}Copy</span>
+          <span onClick={handleCopyClone} className='absolute top-[-1rem] right-[5%] bg-inherit p-1 cursor-pointer flex flex-row gap-1 justify-center items-center'>{copied && <FaCheck />}Copy</span>
         </div>
         <div className='relative px-10 py-3 border-white border-[2px] rounded-2xl bg-[--dark-color]'>
           <span className='absolute top-[-1rem] left-[5%] bg-inherit p-1'>NPM</span>
           <div>{npm}</div>
-          <span ref={npmRef} className='absolute top-[-1rem] right-[5%] bg-inherit p-1 cursor-pointer flex flex-row gap-1 justify-center items-center'>{npmCopied && <FaCheck />}Copy</span>
+          <span onClick={handleCopyNpm} className='absolute top-[-1rem] right-[5%] bg-inherit p-1 cursor-pointer flex flex-row gap-1 justify-center items-center'>{npmCopied && <FaCheck />}Copy</span>
         </div>
       </div>
     </div>

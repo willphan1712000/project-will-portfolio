@@ -1,4 +1,3 @@
-import { useIntersectionObserver } from '@willphan1712000/w'
 import { useEffect } from 'react'
 
 export const tableList: {
@@ -35,32 +34,55 @@ export const tableList: {
       name: 'Option Slider UI component',
       id: 'table_optionSlider'
     }
+  },
+  {
+    id: 'inputGoogle',
+    table: {
+      name: 'Input Google UI component',
+      id: 'table_inputGoogle'
+    }
+  },
+  {
+    id: 'dynamicList',
+    table: {
+      name: 'Dynamic List UI component',
+      id: 'table_dynamicList'
+    }
   }
 ] 
 
 const TableOfContents = () => {
   useEffect(() => {
-    const o = useIntersectionObserver({
-      threshold: 0,
-    }, (entry) => {
-      const id = entry.target.getAttribute("id")
-      const correspondingTable = document.getElementById(`table_${id}`)
-      if(entry.isIntersecting) {
-        if(correspondingTable) {
-          removeAllTarget()
-          correspondingTable.classList.add("target")
+    function removeAllTarget() {
+      tableList.forEach(e => {
+        document.getElementById(e.table.id)?.classList.remove("target")
+      })
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute("id")
+        const correspondingTable = document.getElementById(`table_${id}`)
+        if (entry.isIntersecting) {
+          if (correspondingTable) {
+            removeAllTarget()
+            correspondingTable.classList.add("target")
+          }
         }
+      })
+    }, {
+      threshold: 0,
+    })
+
+    tableList.forEach(e => {
+      const el = document.getElementById(e.id)
+      if (el) {
+        observer.observe(el)
       }
     })
 
-    tableList.map(e => {
-      o.observe(document.getElementById(e.id))
-    })
-
-    function removeAllTarget() {
-      tableList.map(e => {
-        document.getElementById(e.table.id)?.classList.remove("target")
-      })
+    return () => {
+      observer.disconnect()
     }
   }, [])
 

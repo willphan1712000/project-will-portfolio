@@ -1,4 +1,3 @@
-import { $$$ } from '@willphan1712000/w'
 import axios from 'axios'
 import { ReactNode, useState } from 'react'
 
@@ -17,13 +16,12 @@ const EditLink = ({edit, api, name, children, value}: Props) => {
   async function handleSubmit() {
       setMessage('posting...')
       if (api) {
-        const [error,] = await $$$().wPromise().Try(axios.put(api, { url }))
-  
-        if (error) {
+        try {
+          await axios.put(api, { url })
+          setMessage("posted")
+        } catch (error) {
           console.log(error)
           setMessage("failed")
-        } else {
-          setMessage("posted")
         }
   
         setTimeout(() => {
