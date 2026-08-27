@@ -18,7 +18,7 @@ const InputGoogleExample = () => {
       setValue={(v) => setValue(v ?? '')}
       description="Google style text input component"
       styling={{
-        focusColor: '#673ab7',
+        focusColor: '#000',
         backgroundColor: '#ffffff',
         textColor: '#000000',
         borderColor: '#cccccc'
@@ -42,7 +42,7 @@ const InputGoogleComponent = () => {
             setValue={(v) => setValue(v ?? '')}
             description="Google style text input component"
             styling={{
-              focusColor: '#673ab7',
+              focusColor: '#000',
               backgroundColor: '#ffffff',
               textColor: '#000000',
               borderColor: '#cccccc'
