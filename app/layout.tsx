@@ -1,4 +1,3 @@
-import "@willphan1712000/w/dist/index.css";
 import type { Metadata } from "next";
 import Script from "next/script";
 import AuthProvider from "./auth/AuthProvider";

@@ -7,7 +7,7 @@ export default Object.freeze({
         facebook: "https://www.facebook.com/phanthanhnha123200",
         instagram: "https://instagram.com/phanthanhnha_0117",
         linkedin: "https://www.linkedin.com/in/thanh-nha-phan-53715313a/",
-        youtube: "https://www.youtube.com/@nhaphan5748",
+        youtube: "https://www.youtube.com/@willphan1712",
         github: "https://github.com/willphan1712000",
         resume: "https://drive.google.com/open?id=1jWQr8gc_S_VDfwzZ_2uoDnznIPo36TkZ&usp=drive_fs",
         diploma: "https://www.parchment.com/lp/award/047e1d4b-183f-4f4a-bbf4-c95d392334f1"

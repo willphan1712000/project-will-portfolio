@@ -12,7 +12,7 @@ A personal portfolio and interactive library website built using Next.js, TypeSc
 - **Storage:** [Vercel Blob](https://vercel.com/docs/storage/vercel-blob)
 - **State Management:** [TanStack React Query](https://tanstack.com/query/latest)
 - **Icons:** [FontAwesome](https://fontawesome.com/), [React Icons](https://react-icons.github.io/react-icons/)
-- **Libraries:** `@willphan1712000/frontend`, `@willphan1712000/w`, `Axios`, `PrismJS` (for code highlighting)
+- **Libraries:** `@willphan1712000/frontend`, `Axios`, `PrismJS` (for code highlighting)
 
 ## Project Structure
 
