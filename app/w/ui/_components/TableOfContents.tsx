@@ -34,6 +34,20 @@ export const tableList: {
       name: 'Option Slider UI component',
       id: 'table_optionSlider'
     }
+  },
+  {
+    id: 'inputGoogle',
+    table: {
+      name: 'Input Google UI component',
+      id: 'table_inputGoogle'
+    }
+  },
+  {
+    id: 'dynamicList',
+    table: {
+      name: 'Dynamic List UI component',
+      id: 'table_dynamicList'
+    }
   }
 ] 
 
