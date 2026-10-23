@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Code from '../../_components/Code'
 import { ColorPickerSlider } from '@willphan1712000/frontend'
-import { tableList } from './TableOfContents'
+import SectionHeading from './SectionHeading'
 
 const slider = `import { ColorPickerSlider } from '@willphan1712000/frontend';
 import { useState } from 'react';
@@ -27,7 +27,7 @@ const ColorPickerSliderComponent = () => {
     const [value, setValue] = useState<string>('#eeff00')
   return (
     <div>
-        <h1 id={tableList[2].id} className='text-2xl'>{tableList[2].table.name}</h1>
+        <SectionHeading id='colorPickerSlider' />
         <Code filename='ColorPickerSlider.tsx' code={slider}/>
         <div className='w-full p-[50px] rounded-xl bg-white flex justify-center'>
             <ColorPickerSlider 

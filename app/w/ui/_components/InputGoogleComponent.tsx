@@ -3,7 +3,7 @@
 import { InputGoogle } from '@willphan1712000/frontend'
 import { useState } from 'react'
 import Code from '../../_components/Code'
-import { tableList } from './TableOfContents'
+import SectionHeading from './SectionHeading'
 
 const code = `import { InputGoogle } from '@willphan1712000/frontend';
 import { useState } from 'react';
@@ -32,7 +32,7 @@ const InputGoogleComponent = () => {
 
   return (
     <div>
-      <h1 id={tableList[4].id} className='text-2xl'>{tableList[4].table.name}</h1>
+      <SectionHeading id='inputGoogle' />
       <Code filename='InputGoogle.tsx' code={code} />
       <div className='text-black w-full p-[50px] rounded-xl bg-white flex justify-center'>
         <div className='w-[300px]'>

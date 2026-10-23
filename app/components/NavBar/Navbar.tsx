@@ -13,6 +13,15 @@ const href: Record<string, string> = {
   'Travel': '/travel'
 }
 
+/**
+ * A tab is active on its own route and on every nested route under it (e.g. Library on /w and /w/ui)
+ * Root '/' only matches exactly, otherwise Home would be active on every page
+ */
+function isActive(pathName: string, route: string) {
+  if (route === '/') return pathName === '/'
+  return pathName === route || pathName.startsWith(`${route}/`)
+}
+
 const Navbar = () => {
   const navBar = useRef<HTMLDivElement>(null);
   const pathName = usePathname()
@@ -45,7 +54,7 @@ const Navbar = () => {
         </div>
         <div className={styles.navBarInfo}>
             <ul>
-              {Object.keys(href).map(key => <li key={key}><Link href={href[key]}><span className={styles.element} style={pathName === href[key] ? { background: 'black', color: 'white' } : {}}>{key}</span></Link></li>)}
+              {Object.keys(href).map(key => <li key={key}><Link href={href[key]}><span className={styles.element} style={isActive(pathName, href[key]) ? { background: 'black', color: 'white' } : {}}>{key}</span></Link></li>)}
             </ul>
         </div>
       </div>

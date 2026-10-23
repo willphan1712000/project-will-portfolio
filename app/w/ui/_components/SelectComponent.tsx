@@ -3,7 +3,7 @@
 import { DropdownSelect, MultiSelect } from '@willphan1712000/frontend';
 import { useState } from 'react';
 import Code from '../../_components/Code';
-import { tableList } from './TableOfContents';
+import SectionHeading from './SectionHeading';
 
 const options = [
   { label: <span>Nodejs</span>, labelContent: 'Nodejs', value: 'Nodejs' },
@@ -66,7 +66,7 @@ const SelectComponent = () => {
     const [multipleValue, multipleChange] = useState<string[]>([])
   return (
     <div>
-        <h1 id={tableList[0].id} className='text-2xl'>{tableList[0].table.name}</h1>
+        <SectionHeading id='select' />
         <Code filename='DropdownSelect.tsx' code={single} />
         <div className='bg-white flex items-start justify-center p-10 rounded-md m-5 h-[20rem] overflow-hidden text-black'>
           <div className='w-[300px]'>

@@ -3,7 +3,7 @@
 import { DynamicList } from '@willphan1712000/frontend'
 import { useState } from 'react'
 import Code from '../../_components/Code'
-import { tableList } from './TableOfContents'
+import SectionHeading from './SectionHeading'
 
 const code = `import { DynamicList } from '@willphan1712000/frontend';
 import { useState } from 'react';
@@ -31,7 +31,7 @@ const DynamicListComponent = () => {
 
   return (
     <div>
-      <h1 id={tableList[5].id} className='text-2xl'>{tableList[5].table.name}</h1>
+      <SectionHeading id='dynamicList' />
       <Code filename='DynamicList.tsx' code={code} />
       <div className='text-black w-full p-[50px] rounded-xl bg-white flex justify-center'>
         <div className='w-[400px]'>
