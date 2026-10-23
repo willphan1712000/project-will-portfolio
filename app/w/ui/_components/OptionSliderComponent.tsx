@@ -3,7 +3,7 @@
 import { OptionSlider } from '@willphan1712000/frontend'
 import { useState } from 'react'
 import Code from '../../_components/Code'
-import { tableList } from './TableOfContents'
+import SectionHeading from './SectionHeading'
 
 const slider = `import { OptionSlider } from '@willphan1712000/frontend';
 import { useState } from 'react';
@@ -59,7 +59,7 @@ const OptionSliderComponent = () => {
     const [value, setValue] = useState<string>("green")
   return (
     <div>
-        <h1 id={tableList[3].id} className='text-2xl'>{tableList[3].table.name}</h1>
+        <SectionHeading id='optionSlider' />
         <Code filename='OptionSlider.tsx' code={slider}/>
         <div className='text-black w-full p-[50px] rounded-xl bg-white flex justify-center'>
           <div className='w-[350px] h-[60px]'>

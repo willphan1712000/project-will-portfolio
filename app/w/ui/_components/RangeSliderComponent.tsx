@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Code from '../../_components/Code'
 import { RangeSlider } from '@willphan1712000/frontend'
-import { tableList } from './TableOfContents'
+import SectionHeading from './SectionHeading'
 
 const slider = `import { RangeSlider } from '@willphan1712000/frontend';
 import { useState } from 'react';
@@ -29,7 +29,7 @@ const RangeSliderComponent = () => {
     const [value, setValue] = useState<string>("50")
   return (
     <div>
-        <h1 id={tableList[1].id} className='text-2xl'>{tableList[1].table.name}</h1>
+        <SectionHeading id='rangeSlider' />
         <Code filename='RangeSlider.tsx' code={slider}/>
         <div className='text-black w-full p-[50px] rounded-xl bg-white flex justify-center'>
             <RangeSlider

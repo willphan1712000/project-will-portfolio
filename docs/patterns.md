@@ -23,7 +23,7 @@
 
 ## UI library
 
-`@willphan1712000/frontend` is the author's own component library (`ModernButton`, `DropdownSelect`, `MultiSelect`, sliders, `InputGoogle`, `DynamicList`, …). Use it first. Each `/w/ui/_components/*Component.tsx` renders a live demo plus a code string shown through `Code` / PrismJS. Register new demos in `TableOfContents.tsx` (`tableList`).
+`@willphan1712000/frontend` is the author's own component library (`ModernButton`, `DropdownSelect`, `MultiSelect`, sliders, `InputGoogle`, `DynamicList`, …). Use it first. Each `/w/ui/_components/*Component.tsx` renders a live demo plus a code string shown through `Code` / PrismJS. To add a demo: add an entry to `tableList` in `TableOfContents.tsx`, render `<SectionHeading id='...' />` at the top of the demo, and mount it in `app/w/ui/page.tsx`. Keep the code string and the live demo identical.
 
 ## State & data
 
